@@ -24,3 +24,6 @@ hs_err_pid*
 
 # IntelliJ Module File
 *.iml
+.idea/*
+target/*
+venv/*

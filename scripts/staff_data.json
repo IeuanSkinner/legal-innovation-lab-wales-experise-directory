@@ -1,0 +1,2130 @@
+[
+    {
+        "name": "Dr William Allen",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/w.l.allen",
+        "email": "w.l.allen@swansea.ac.uk",
+        "tel": "01792 602199",
+        "expertise": [
+            "Evolutionary Ecology",
+            "Signalling and Communication",
+            "Antipredator Adaptations",
+            "Life History Evolution",
+            "Sensory systems"
+        ]
+    },
+    {
+        "name": "Dr Kevin Arbuckle",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/arbucklek/",
+        "email": "kevin.arbuckle@swansea.ac.uk",
+        "tel": "01792 602087",
+        "expertise": [
+            "Evolutionary biology",
+            "Venomous and poisonous animals",
+            "Phylogenetic comparative methods",
+            "Convergent evolution",
+            "Herpetology",
+            "Animal husbandry"
+        ]
+    },
+    {
+        "name": "Dr Sara Barrento",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/s.i.barrento",
+        "email": "s.i.barrento@swansea.ac.uk",
+        "tel": "01792 602030",
+        "expertise": [
+            "Marine Invertebrates Physiology",
+            "Food safety and security",
+            "Sustainable Supply Chains",
+            "Sustainable Marine Production (seaweeds and marine invertebrates; Integrated Multi Trophic Aquaculture)",
+            "Kelp Ecology"
+        ]
+    },
+    {
+        "name": "Chiara Bertelli",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.m.bertelli/",
+        "email": "c.m.bertelli@swansea.ac.uk",
+        "tel": "01792 602154",
+        "expertise": [
+            "Seagrass ecology",
+            "Benthic and fish survey",
+            "Benthic invertebrate taxonomy",
+            "Rocky shore ecology",
+            "Marine mammal survey",
+            "Passive acoustic monitoring",
+            "Data analysis using R and Primer"
+        ]
+    },
+    {
+        "name": "Prof. Luca Borger",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/l.borger/",
+        "email": "l.borger@swansea.ac.uk",
+        "tel": "01792 513112",
+        "expertise": [
+            "Movement ecology",
+            "Behavioural ecology",
+            "Population ecology",
+            "Community ecology",
+            "Spatial ecology",
+            "Biodiversity",
+            "Natural resource management",
+            "Conservation"
+        ]
+    },
+    {
+        "name": "Dr Jim Bull",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/j.c.bull",
+        "email": "j.c.bull@swansea.ac.uk",
+        "tel": "01792 602972",
+        "expertise": [
+            "Ecological statistics",
+            "Long-term monitoring",
+            "Marine mammals",
+            "Metapopulations",
+            "Pest control",
+            "Pollinators",
+            "Population dynamics and genetics",
+            "Seagrass"
+        ]
+    },
+    {
+        "name": "Dr Ruth Callaway",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/r.m.callaway",
+        "email": "r.m.callaway@swansea.ac.uk",
+        "tel": "01792 602133",
+        "expertise": [
+            "Marine ecology",
+            "Marine invertebrates",
+            "Infauna and epibenthos",
+            "Marine renewable energy",
+            "Estuaries",
+            "Bioengineering",
+            "Swansea Bay",
+            "North Sea"
+        ]
+    },
+    {
+        "name": "Dr Christopher Coates",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.j.coates",
+        "email": "c.j.coates@swansea.ac.uk",
+        "tel": "01792 513296",
+        "expertise": [
+            "Invertebrate Immunology and Haematology",
+            "Protein Structure, Function and Diversity (e.g., hemocyanins and phenoloxidases)",
+            "Aquaculture and (Shell) Fisheries",
+            "Alternative disease models"
+        ]
+    },
+    {
+        "name": "Prof. Sofia Consuegra Del Olmo",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/s.consuegra/",
+        "email": "s.consuegra@swansea.ac.uk",
+        "tel": "01792 295059",
+        "expertise": [
+            "Evolutionary ecology",
+            "Conservation genetics/omics",
+            "Fisheries and aquaculture",
+            "Invasive species"
+        ]
+    },
+    {
+        "name": "Dr Chris Cunningham",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/cunninghamc/",
+        "email": "c.b.cunningham@swansea.ac.uk",
+        "tel": "01792 513247",
+        "expertise": [
+            "Social behaviour",
+            "Genetics",
+            "Epigenetics",
+            "Social Neuroscience"
+        ]
+    },
+    {
+        "name": "Dr Charlotte Davies",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/daviesce",
+        "email": "c.e davies@swansea.ac.uk",
+        "tel": "01792 295293",
+        "expertise": [
+            "Diseases of aquatic animals",
+            "Crustaceans",
+            "Marine Protected Areas",
+            "Disease Connectivity",
+            "eDNA"
+        ]
+    },
+    {
+        "name": "Dr Aisling Devine",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/devineap/",
+        "email": "a.p.devine@swansea.ac.uk",
+        "tel": "01792 604488",
+        "expertise": [
+            "Savanna ecology",
+            "Fire ecology",
+            "Miombo woodlands",
+            "Community ecology",
+            "Biodiversity",
+            "Environmental resources and poverty alleviation"
+        ]
+    },
+    {
+        "name": "Prof. Dan Eastwood",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/d.c.eastwood/",
+        "email": "d.c.eastwood@swansea.ac.uk",
+        "tel": "01792 513003",
+        "expertise": [
+            "Fungal Biology",
+            "Genomics",
+            "Molecular Biology",
+            "Transcriptomics",
+            "Agaricus bisporus",
+            "Serpula lacrymans",
+            "Wood decomposition",
+            "Biofuels and biorefineries"
+        ]
+    },
+    {
+        "name": "Dr Nicole Esteban",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/n.esteban/",
+        "email": "n.esteban@swansea.ac.uk",
+        "tel": "01792 295454",
+        "expertise": [
+            "Marine ecology",
+            "Marine biology",
+            "Sea turtle ecology",
+            "Tropical marine conservation",
+            "Biodiversity conservation"
+        ]
+    },
+    {
+        "name": "Dr Dan W. Forman",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/d.w.forman",
+        "email": "d.w.forman@swansea.ac.uk",
+        "tel": "01792 295445",
+        "expertise": [
+            "Carnivore Ecology and Conservation",
+            "Wildlife Disease",
+            "Biodiversity",
+            "Ecological Monitoring",
+            "British Wildlife",
+            "Freshwater Ecology",
+            "Conservation",
+            "Predator diet"
+        ]
+    },
+    {
+        "name": "Dr Mike Fowler",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/m.s.fowler/",
+        "email": "m.s.fowler@swansea.ac.uk",
+        "tel": "01792 295443",
+        "expertise": [
+            "Complex dynamics",
+            "environmental stochasticity",
+            "species-environment interactions",
+            "species-species interactions.",
+            "coloured stochastic processes",
+            "spatio-temporal dynamics",
+            "data analysis",
+            "quantitative approaches"
+        ]
+    },
+    {
+        "name": "Dr Cindy Froyd",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.froyd",
+        "email": "c.froyd@swansea.ac.uk",
+        "tel": "01792 605254",
+        "expertise": [
+            "Long-term ecology",
+            "Forest ecology",
+            "Biodiversity and conservation",
+            "Island conservation and restoration",
+            "Quaternary environmental change",
+            "Disturbance ecology",
+            "Natural resources management",
+            "Peatland restoration ecology"
+        ]
+    },
+    {
+        "name": "Dr Ines Furtbauer",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/i.fuertbauer",
+        "email": "I.Fuertbauer@swansea.ac.uk",
+        "tel": "01792 602932",
+        "expertise": [
+            "Animal Behaviour",
+            "Animal Personality",
+            "Non-invasive Hormone Analysis",
+            "Reproductive Physiology",
+            "Stress Physiology"
+        ]
+    },
+    {
+        "name": "Prof. Carlos Garcia de Leaniz",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.garciadeleaniz",
+        "email": "c.garciadeleaniz@swansea.ac.uk",
+        "tel": "01792 295383",
+        "expertise": [
+            "salmon",
+            "mate choice",
+            "Boldness",
+            "Anti-predatory behaviour",
+            "Captive-breeding",
+            "Maladaptation",
+            "Salmonid conservation",
+            "aquaculture"
+        ]
+    },
+    {
+        "name": "Dr Wendy Harris",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/w.e.harris/",
+        "email": "w.e.harris@swansea.ac.uk",
+        "tel": "01792 604488",
+        "expertise": [
+            "Entomology",
+            "Applied ecology",
+            "Plant-insect relationships",
+            "Ecological monitoring",
+            "Bat ecology",
+            "Conservation",
+            "Citizen science and outreach"
+        ]
+    },
+    {
+        "name": "Dr Andrew King",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/a.j.king/",
+        "email": "a.j.king@swansea.ac.uk",
+        "tel": "01792 296991",
+        "expertise": [
+            "Animal behaviour",
+            "Behavioural ecology",
+            "Collective behaviour",
+            "Socioecology"
+        ]
+    },
+    {
+        "name": "Dr Carole Llewellyn",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.a.llewellyn/",
+        "email": "c.a.llewellyn@swansea.ac.uk",
+        "tel": "01792 606168",
+        "expertise": [
+            "Microalgae and cyanobacteria",
+            "Phytoplankton ecology",
+            "Microbial biodiversity and biogeochemistry",
+            "Chlorophylls and carotenoids",
+            "Microbial UV suncreens - mycosporine-like amino acids",
+            "Algal biotechnology",
+            "Metabolomics"
+        ]
+    },
+    {
+        "name": "Dr Chris Lowe",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/c.d.lowe",
+        "email": "c.d.lowe@swansea.ac.uk",
+        "tel": "01792 513116",
+        "expertise": [
+            "Environmental remote sensing through light and sound",
+            "Bio-optical oceanography",
+            "Plankton dynamics",
+            "Modelling human/environment interactions.",
+            "Environmental management and assessment.",
+            "EU and UK environmental policy and legislation"
+        ]
+    },
+    {
+        "name": "Dr Miguel Lurgi",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/lurgimiguel/",
+        "email": "miguel.lurgi@swansea.ac.uk",
+        "tel": "01792 602157",
+        "expertise": [
+            "Ecological Networks",
+            "Community Ecology",
+            "Food Web Theory",
+            "Network Biogeography",
+            "Microbiome",
+            "Theoretical Ecology",
+            "Global change (invasions, habitat loss, warming)"
+        ]
+    },
+    {
+        "name": "Anouska Mendzil",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/a.f.mendzil",
+        "email": "a.f.mendzil@swansea.ac.uk",
+        "tel": "01792 602154",
+        "expertise": [
+            "UAV/Drone surveys",
+            "GIS",
+            "Cetacean static acoustic monitoring",
+            "Line-transect and towed acoustic surveys",
+            "Cetacean DNA and eDNA",
+            "Sediment dynamics",
+            "Sediment-related heavy metals",
+            "X-Ray Fluorescence"
+        ]
+    },
+    {
+        "name": "Dr Ed Pope",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/e.c.pope",
+        "email": "e.c.pope@swansea.ac.uk",
+        "tel": "01792 295059",
+        "expertise": [
+            "Marine invertebrate biology",
+            "Fish biology",
+            "Marine ecology",
+            "Ocean acidification",
+            "Ecophysiology"
+        ]
+    },
+    {
+        "name": "Dr Kayleigh Rose",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/rosekar",
+        "email": "K.A.R.Rose@Swansea.ac.uk",
+        "tel": "01792 604212",
+        "expertise": [
+            "Animal locomotion",
+            "Biomechanics",
+            "Respirometry",
+            "Comparative morphology"
+        ]
+    },
+    {
+        "name": "Prof. Andrew Rowley",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/a.f.rowley/",
+        "email": "a.f.rowley@swansea.ac.uk",
+        "tel": "01792 295445",
+        "expertise": [
+            "Disease Ecology",
+            "Histopathology",
+            "Aquatic Biology",
+            "Evolutionary Immunology",
+            "Shellfish Aquaculture & Fisheries",
+            "Climate Change & Aquatic Disease",
+            "Comparative Pathobiology"
+        ]
+    },
+    {
+        "name": "Dr Cristina Santin",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/santinc",
+        "email": "c.santin@swansea.ac.uk",
+        "tel": "01792 295860",
+        "expertise": [
+            "Wildfires",
+            "Prescribed fires",
+            "Carbon cycle",
+            "Pyrogenic carbon",
+            "Fuels",
+            "Water quality",
+            "Social perceptions of fire",
+            "Soils"
+        ]
+    },
+    {
+        "name": "Professor Emily L.C.Shepard",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/e.l.c.shepard/",
+        "email": "e.l.c.shepard@swansea.ac.uk",
+        "tel": "01792 604001",
+        "expertise": [
+            "Movement ecology",
+            "Biotelemetry",
+            "Flight",
+            "Aeroecology",
+            "Energetics"
+        ]
+    },
+    {
+        "name": "Prof. Kam Tang",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/k.w.tang/",
+        "email": "k.w.tang@swansea.ac.uk",
+        "tel": "01792 295059",
+        "expertise": [
+            "Plankton ecology",
+            "Microbial ecology",
+            "Pelagic processes",
+            "Biogeochemistry"
+        ]
+    },
+    {
+        "name": "Dr Gethin Thomas",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/g.r.thomas/",
+        "email": "g.r.thomas@swansea.ac.uk",
+        "tel": "01792 606426",
+        "expertise": [
+            "Zoology",
+            "Parasitology",
+            "Freshwater biology",
+            "Freshwater mussels"
+        ]
+    },
+    {
+        "name": "Dr Richard Unsworth",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/r.k.f.unsworth/",
+        "email": "r.k.f.unsworth@swansea.ac.uk",
+        "tel": "01792 606745",
+        "expertise": [
+            "Marine ecology",
+            "Seagrass biology",
+            "Fisheries ecology",
+            "Fish biology",
+            "Social-ecological systems",
+            "resilience",
+            "marine biology",
+            "Food security"
+        ]
+    },
+    {
+        "name": "Dr Tamsyn Uren Webster",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/urenwebstertm/",
+        "email": "t.m.urenwebster@swansea.ac.uk",
+        "tel": "01792 604495",
+        "expertise": [
+            "Sustainable aquaculture",
+            "Ecotoxicology",
+            "Stress",
+            "High throughput sequencing & bioinformatics",
+            "Microbiomes",
+            "Epigenetics",
+            "Transcriptomics",
+            "Environmental genomics"
+        ]
+    },
+    {
+        "name": "Dr Konstans Wells",
+        "department": "biosciences",
+        "url": "https://www.swansea.ac.uk/staff/science/biosciences/wellskl",
+        "email": "k.l.wells@swansea.ac.uk",
+        "tel": "01792 518633",
+        "expertise": [
+            "Wildlife ecology and management",
+            "Disease ecology",
+            "Eco-epidemiology",
+            "Ecohealth and One Health",
+            "Biodiversity",
+            "Conservation biology"
+        ]
+    },
+    {
+        "name": "Professor Gil Alexandrowicz",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/alexandrowiczgn/",
+        "email": "g.n.alexandrowicz@swansea.ac.uk",
+        "tel": "01792 602405",
+        "expertise": [
+            "Atomic and molecular beams",
+            "Surface dynamics",
+            "Surface diffusion",
+            "Molecule-surface collisions"
+        ]
+    },
+    {
+        "name": "Dr Marcella Bassetto",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/marcella-bassetto/",
+        "email": "marcella.bassetto@swansea.ac.uk",
+        "tel": "01792",
+        "expertise": [
+            "Molecular modelling",
+            "Computer-aided drug design",
+            "Medicinal Chemistry",
+            "Synthetic organic chemistry",
+            "Antiviral research"
+        ]
+    },
+    {
+        "name": "Dr Mariolino Carta",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/cartam/",
+        "email": "Mariolino.Carta@Swansea.ac.uk",
+        "tel": "01792 604688",
+        "expertise": [
+            "Organic Chemistry",
+            "Material Chemistry",
+            "Polymers of Intrinsic Microporosity (PIMs)",
+            "Gas Separation",
+            "Mixed Matrix Membranes (MMMs)",
+            "Heterogeneous Catalysis"
+        ]
+    },
+    {
+        "name": "Dr Emrys Evans",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/evans-e/",
+        "email": "emrys.evans@swansea.ac.uk",
+        "tel": "01792 606833",
+        "expertise": [
+            "Spectroscopy",
+            "Spin Physics",
+            "Optoelectronics",
+            "Spintronics"
+        ]
+    },
+    {
+        "name": "Dr Martin Gill",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/martin_gill/",
+        "email": "m.r.gill@swansea.ac.uk",
+        "tel": "01792 606274",
+        "expertise": [
+            "Chemical Biology",
+            "Bioinorganic Chemistry",
+            "Medicinal Chemistry",
+            "Coordination Chemistry",
+            "Organometallic Chemistry",
+            "Radiochemistry",
+            "Cancer Research",
+            "Pharmacology"
+        ]
+    },
+    {
+        "name": "Dr Christian Klinke",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/christian.klinke@swansea.ac.uk/",
+        "email": "christian.klinke@swansea.ac.uk",
+        "tel": "01792 604278",
+        "expertise": [
+            "Colloidal nanomaterials",
+            "Carbon nanostructures",
+            "Spectroscopy",
+            "Optoelectronic transport",
+            "Simulations"
+        ]
+    },
+    {
+        "name": "Dr Moritz Kuehnel",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/kuehnelmf/",
+        "email": "m.f.kuehnel@swansea.ac.uk",
+        "tel": "01792 604611",
+        "expertise": [
+            "Photocatalysis",
+            "Electrochemistry",
+            "CO2 reduction",
+            "H2 evolution",
+            "Biomass utilisation",
+            "Fluorine chemistry"
+        ]
+    },
+    {
+        "name": "Dr Joel Loveridge",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/loveridgeej/",
+        "email": "e.j.loveridge@swansea.ac.uk",
+        "tel": "01792 513199",
+        "expertise": [
+            "Natural products biosynthesis",
+            "Synthesis of antimicrobial compounds",
+            "Enzymology",
+            "NMR spectroscopy",
+            "Public engagement and outreach"
+        ]
+    },
+    {
+        "name": "Dr Francisco Martin-Martinez",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/francisco-martin-martinez/",
+        "email": "f.j.martin-martinez@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Quantum chemistry",
+            "Density functional theory",
+            "Molecular dynamics",
+            "Theoretical and computational chemistry",
+            "Hydrothermal liquefaction",
+            "Bioinspired materials",
+            "Biobased materials",
+            "Bioasphalt design",
+            "Lignin",
+            "Nanocellulose"
+        ]
+    },
+    {
+        "name": "Dr Deb Roy",
+        "department": "chemistry",
+        "url": "https://www.swansea.ac.uk/staff/science/chemistry/royd/",
+        "email": "deb.roy@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Raman Spectroscopy",
+            "Tip-enhanced Raman Spectroscopy",
+            "Graphene and 2D Materials",
+            "Coherent Raman Imaging of Biological Systems",
+            "Sensors and Digital Molecular Diagnostics"
+        ]
+    },
+    {
+        "name": "Prof. Matt Jones",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/matt.jones/",
+        "email": "matt.jones@swansea.ac.uk",
+        "tel": "01792 295259",
+        "expertise": [
+            "Human Computer Interaction",
+            "User Experience Design",
+            "AI and Big Data",
+            "Global Challenges Innovation"
+        ]
+    },
+    {
+        "name": "Prof. Arnold Beckmann",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/a.beckmann/",
+        "email": "a.beckmann@swansea.ac.uk",
+        "tel": "01792 602370",
+        "expertise": [
+            "Mathematical Logic",
+            "Theoretical Computer Science",
+            "Proof theory and proof complexity",
+            "Bounded arithmetic and propositional proof complexity",
+            "Implicit computational complexity",
+            "Reduction systems",
+            "Intermediate predicate logics"
+        ]
+    },
+    {
+        "name": "Dr Monika Seisenberger",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/m.seisenberger/",
+        "email": "m.seisenberger@swansea.ac.uk",
+        "tel": "01792 602131",
+        "expertise": [
+            "Formal Methods",
+            "Program extraction",
+            "Interactive theorem proving",
+            "Specification and Verification",
+            "Logic",
+            "Proof theory",
+            "Well- and better quasiorderings"
+        ]
+    },
+    {
+        "name": "Prof. Alan Dix",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/dixaj/",
+        "email": "a.j.dix@swansea.ac.uk",
+        "tel": "01792 523432",
+        "expertise": [
+            "Human-computer interaction",
+            "Technical creativity and innovation",
+            "Digital Economy",
+            "Social Justice",
+            "Physicality and digital product design",
+            "Algorithmic bias",
+            "Statistics Artificial intelligence",
+            "Machine learning"
+        ]
+    },
+    {
+        "name": "Dr Xiuyi Fan",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/fanxiuyi/",
+        "email": "xiuyi.fan@swansea.ac.uk",
+        "tel": "01792 604541",
+        "expertise": [
+            "Explainable AI",
+            "Argumentation",
+            "Multi-agent Systems",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "name": "Dr Arno Pauly",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/paulya/",
+        "email": "a.m.pauly@swansea.ac.uk",
+        "tel": "01792 604598",
+        "expertise": [
+            "Computable analysis",
+            "Effective descriptive set theory",
+            "Game theory and CS"
+        ]
+    },
+    {
+        "name": "Dr Jingjing Deng",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/dengj/",
+        "email": "j.deng@swansea.ac.uk",
+        "tel": "01792 602019",
+        "expertise": [
+            "Machine Learning",
+            "Computer Vision and Biomedical Image Analysis",
+            "Natural and Machine Language Processing"
+        ]
+    },
+    {
+        "name": "Prof. Mark Jones",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/m.w.jones/",
+        "email": "m.w.jones@swansea.ac.uk",
+        "tel": "01792 513391",
+        "expertise": [
+            "Ray Tracing;",
+            "Global Illumination;",
+            "Data Visualization;",
+            "Data Science;",
+            "Time-Series Data;",
+            "Volume Visualization;",
+            "Computer Graphics"
+        ]
+    },
+    {
+        "name": "Dr Siyuan Liu",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/lius/",
+        "email": "siyuan.liu@swansea.ac.uk",
+        "tel": "01792 518623",
+        "expertise": [
+            "Soft security",
+            "Recommender system",
+            "Serious games"
+        ]
+    },
+    {
+        "name": "Dr Bertie Muller",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/mullerb/",
+        "email": "berndt.muller@swansea.ac.uk",
+        "tel": "01792 604524",
+        "expertise": [
+            "Artificial Intelligence",
+            "Technology Ethics",
+            "Formal Languages",
+            "Mathematical Logic",
+            "Models of Concurrency",
+            "Formal Verification"
+        ]
+    },
+    {
+        "name": "Dr Liam O'Reilly",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/l.p.oreilly/",
+        "email": "l.p.oreilly@swansea.ac.uk",
+        "tel": "01792 604033",
+        "expertise": [
+            "Formal Methods",
+            "Computer Science and Software Engineering Pedagogy",
+            "Algebraic Specification",
+            "Process Algebra"
+        ]
+    },
+    {
+        "name": "Dr Jen Pearson",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/j.pearson/",
+        "email": "j.pearson@swansea.ac.uk",
+        "tel": "01792 518622",
+        "expertise": [
+            "Human-Computer Interaction (HCI)",
+            "Emergent Users",
+            "Deformable Devices",
+            "Sustainable Interfaces",
+            "Internet of Things",
+            "Participatory Design",
+            "Conversational User Interfaces",
+            "Digital Reading"
+        ]
+    },
+    {
+        "name": "Stewart Powell",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/s.w.powell/",
+        "email": "s.w.powell@swansea.ac.uk",
+        "tel": "01792 606276",
+        "expertise": [
+            "Computer Science Education"
+        ]
+    },
+    {
+        "name": "Dr Alma Rahat",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/alma-rahat/",
+        "email": "a.a.m.rahat@swansea.ac.uk",
+        "tel": "01792 518621",
+        "expertise": [
+            "Bayesian Search and Optimisation",
+            "Evolutionary Algorithms",
+            "Multi-objective Optimisation",
+            "Surrogate-Assisted Optimisation",
+            "Nature Inspired Computation",
+            "Active Learning",
+            "Machine Learning"
+        ]
+    },
+    {
+        "name": "Dr Matt Roach",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/m.j.roach/",
+        "email": "m.j.roach@swansea.ac.uk",
+        "tel": "01792 606662",
+        "expertise": [
+            "Machine Learning",
+            "Algorithmic Bias, Fairness, Interpretation.",
+            "Pervasive & Persuasive Computing",
+            "Human Computer/Data Interaction",
+            "Participatory Design",
+            "Socio-Technical Decision-Making Systems",
+            "Domains: Health & Well being, Smart Cities, Digital Economy"
+        ]
+    },
+    {
+        "name": "Dr Simon Robinson",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/s.n.w.robinson/",
+        "email": "s.n.w.robinson@swansea.ac.uk",
+        "tel": "01792 602699",
+        "expertise": [
+            "Human-Computer Interaction (HCI)",
+            "Participatory Design and Co-creation",
+            "Conversational User Interfaces",
+            "Ubiquitous Computing",
+            "Deformable Devices",
+            "Internet of Things",
+            "Emergent Users",
+            "Low-attention and Mobile Interaction Design"
+        ]
+    },
+    {
+        "name": "Dr Deepak Sahoo",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/sahood/",
+        "email": "d.r.sahoo@swansea.ac.uk",
+        "tel": "01792 604101",
+        "expertise": [
+            "Human-Computer Interaction",
+            "Internet of Things",
+            "Ubiquitous Computing"
+        ]
+    },
+    {
+        "name": "Dr Anton Setzer",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/a.g.setzer/",
+        "email": "a.g.setzer@swansea.ac.uk",
+        "tel": "01792 513368",
+        "expertise": [
+            "Interactive theorem proving",
+            "Type theory",
+            "Martin-Loef Type Theory",
+            "Coinduction",
+            "Proof theory",
+            "Dependently typed programming",
+            "Ordinals",
+            "Pattern matching"
+        ]
+    },
+    {
+        "name": "Dr Gary Tam",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/k.l.tam/",
+        "email": "k.l.tam@swansea.ac.uk",
+        "tel": "01792 51338",
+        "expertise": [
+            "Visual Analytics",
+            "Machine Learning",
+            "Digital Geometry Processing",
+            "Pattern Recognition and Vision",
+            "Multi-dimensional Data Analysis",
+            "Information Retrieval and Indexing"
+        ]
+    },
+    {
+        "name": "Dr Tom Torsney-Weir",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/torsney-weirtd/",
+        "email": "t.d.torsney-weir@swansea.ac.uk",
+        "tel": "01792 604273",
+        "expertise": [
+            "Visualization",
+            "Machine learning",
+            "Multi-dimensional data analysis",
+            "Multi-objective optimization"
+        ]
+    },
+    {
+        "name": "Dr Sean Walton",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/waltonsp/",
+        "email": "s.p.walton@swansea.ac.uk",
+        "tel": "01792 604966",
+        "expertise": [
+            "Computational Fluid Dynamics",
+            "Mesh generation",
+            "Evolutionary Optimisation Algorithms",
+            "Educational technology",
+            "Video games development"
+        ]
+    },
+    {
+        "name": "Prof. Xianghua Xie",
+        "department": "compsci",
+        "url": "https://www.swansea.ac.uk/staff/science/computer-science/x.xie/",
+        "email": "x.xie@swansea.ac.uk",
+        "tel": "01792 604541",
+        "expertise": [
+            "Computer Vision",
+            "Image Processing",
+            "Pattern Recognition",
+            "Machine Learning",
+            "Big Data",
+            "Medical Image Understanding",
+            "Medical Imaging",
+            "Bioinformatics"
+        ]
+    },
+    {
+        "name": "Dr Paul Albert",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/albert-p-g/",
+        "email": "p.g.albert@swansea.ac.uk",
+        "tel": "01792 602819",
+        "expertise": [
+            "Tephrochronology",
+            "Volcanology",
+            "Geochemistry",
+            "Quaternary climate variability"
+        ]
+    },
+    {
+        "name": "Dr Paul Alton",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/p.alton/",
+        "email": "p.alton@swansea.ac.uk",
+        "tel": "01792 295069",
+        "expertise": [
+            "Environmental modelling and radiative transfer in vegetation canopies",
+            "Global simulations of carbon, water and energy exchange between the landsurface and the atmosphere",
+            "Parameter retrieval of biophysical properties using optimisation methods"
+        ]
+    },
+    {
+        "name": "Dr Diana Beljaars",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/beljaarsdnm/",
+        "email": "d.n.m.beljaars@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Cultural & Urban, Disability & Health geography",
+            "Posthumanism & Post-phenomenology",
+            "Performativity, practices & embodiment",
+            "Compulsion, Mental Health & Tourette Syndrome",
+            "Interdisciplinarity & knowledge construction in the life sciences",
+            "Mobile eye-tracking"
+        ]
+    },
+    {
+        "name": "Dr Suzanne Bevan",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/s.l.bevan/",
+        "email": "s.l.bevan@swansea.ac.uk",
+        "tel": "01792 602375",
+        "expertise": [
+            "Earth Observation",
+            "Glaciology",
+            "Geographical Information Systems"
+        ]
+    },
+    {
+        "name": "Professor Dave Clarke",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/d.b.clarke/",
+        "email": "d.b.clarke@swansea.ac.uk",
+        "tel": "01792 602317",
+        "expertise": [
+            "Urban Theory",
+            "Consumer Culture",
+            "Value",
+            "Cinematic Space",
+            "Visual Technologies",
+            "Jean Baudrillard",
+            "The Unconscious",
+            "Structuralism and Poststructuralism"
+        ]
+    },
+    {
+        "name": "Dr Angharad Closs Stephens",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/stephens-a-c/",
+        "email": "a.c.stephens@swansea.ac.uk",
+        "tel": "01792 606287",
+        "expertise": [
+            "Critical approaches to the study of nationalism;",
+            "Performance, art and politics;",
+            "Critical security studies;",
+            "Critical theories;",
+            "Creative and artistic methods;",
+            "Cultural and political geographies;",
+            "Cities and citizenship;",
+            "Affect, atmosphere"
+        ]
+    },
+    {
+        "name": "Dr Stephen Cornford",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/cornfordsl/",
+        "email": "s.l.cornford@swansea.ac.uk",
+        "tel": "01792 513298",
+        "expertise": [
+            "Ice Flow Modelling",
+            "Antarctica",
+            "Data Assimilation",
+            "Adaptive mesh methods",
+            "High performance computing"
+        ]
+    },
+    {
+        "name": "Professor Siwan Davies",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/siwan.davies/",
+        "email": "siwan.davies@swansea.ac.uk",
+        "tel": "01792 295233",
+        "expertise": [
+            "Tephrochronology",
+            "Quaternary Science and palaeoenvironmental change",
+            "Abrupt and rapid climatic changes",
+            "Geochronology"
+        ]
+    },
+    {
+        "name": "Professor Marcus Doel",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/m.a.doel/",
+        "email": "m.a.doel@swansea.ac.uk",
+        "tel": "01792 513090",
+        "expertise": [
+            "Deconstruction",
+            "Human Geography",
+            "Philosophy of Geography",
+            "Media Geographies",
+            "Modernity and Postmodernity",
+            "Poststructuralism",
+            "Social and Spatial Theory",
+            "Urban Theory"
+        ]
+    },
+    {
+        "name": "Professor Stefan Doerr",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/s.doerr/",
+        "email": "s.doerr@swansea.ac.uk",
+        "tel": "01792 295147",
+        "expertise": [
+            "Wildfire",
+            "Soil physical and chemical characteristics",
+            "Hydrology",
+            "Water contamination",
+            "Geomorphology",
+            "Biogeochemistry"
+        ]
+    },
+    {
+        "name": "Dr Osian Elias",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/eliasoh/",
+        "email": "O.H.Elias@Swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Sociolinguistics",
+            "Language Policy",
+            "Behavioural Science",
+            "Behavioural Policy",
+            "Sustainability",
+            "Pro-environmental Behaviour"
+        ]
+    },
+    {
+        "name": "Dr Kath Ficken",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/k.j.ficken/",
+        "email": "k.j.ficken@swansea.ac.uk",
+        "tel": "01792 602665",
+        "expertise": [
+            "Organic Geochemistry",
+            "Geology",
+            "Palaeoenvironmental Reconstruction",
+            "Quaternary Environments"
+        ]
+    },
+    {
+        "name": "Professor Mary Gagen",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/m.h.gagen/",
+        "email": "m.h.gagen@swansea.ac.uk",
+        "tel": "01792 602501",
+        "expertise": [
+            "Palaeoclimate",
+            "Climate change",
+            "Tree ring science",
+            "Dendroclimatology",
+            "Carbon isotopes",
+            "Science outreach",
+            "Public science engagement"
+        ]
+    },
+    {
+        "name": "Dr Keith Halfacree",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/k.h.halfacree/",
+        "email": "k.h.halfacree@swansea.ac.uk",
+        "tel": "01792 602502",
+        "expertise": [
+            "Rural areas in Global North",
+            "Counterurbanisation and rural population change",
+            "Defining and understanding rural and rurality",
+            "Radical ruralities",
+            "Countercultural spaces",
+            "Internal migration",
+            "Nature spaces",
+            "Americana music"
+        ]
+    },
+    {
+        "name": "Dr John Hiemstra",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/j.hiemstra/",
+        "email": "j.hiemstra@swansea.ac.uk",
+        "tel": "01792 295143",
+        "expertise": [
+            "Glaciology",
+            "Till sedimentology and permafrost",
+            "Glacial and periglacial geomorphology",
+            "Quaternary Geology",
+            "Palaeogeography",
+            "Climate reconstruction",
+            "Micromorphology"
+        ]
+    },
+    {
+        "name": "Dr Glenn Jones",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/jonesga/",
+        "email": "g.a.jones@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Seismology",
+            "Inverse Problems",
+            "Geophysics"
+        ]
+    },
+    {
+        "name": "Professor Bernd Kulessa",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/b.kulessa/",
+        "email": "b.kulessa@swansea.ac.uk",
+        "tel": "01792 513163",
+        "expertise": [
+            "Applied geophysics",
+            "Glaciology",
+            "Cryospheric science",
+            "Environmental and engineering geophysics",
+            "Hydrogeophysics",
+            "Biogeophysics",
+            "Subsurface hydrology",
+            "Aquifer testing"
+        ]
+    },
+    {
+        "name": "Professor Neil Loader",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/n.j.loader/",
+        "email": "n.j.loader@swansea.ac.uk",
+        "tel": "01792 295546",
+        "expertise": [
+            "Stable isotope analysis of tree rings",
+            "Dendrochronology and dendroclimatology",
+            "Stable isotope dendrochronology",
+            "Environmental archaeology",
+            "Quaternary research",
+            "Technique development"
+        ]
+    },
+    {
+        "name": "Professor Adrian Luckman",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/a.luckman/",
+        "email": "a.luckman@swansea.ac.uk",
+        "tel": "01792 295542",
+        "expertise": [
+            "Satellite Earth Observation",
+            "Geographic Information Systems (GIS)",
+            "Glaciology",
+            "Iceberg calving",
+            "Glacier dynamics",
+            "Glacier surges",
+            "Ice shelf stability"
+        ]
+    },
+    {
+        "name": "Dr Joanne Maddern",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/maddernjf/",
+        "email": "j.f.maddern@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Migration and Identity",
+            "Subjectivity and Space",
+            "Heritage and Spectrality",
+            "American National Identities",
+            "History and Memory",
+            "Academic Development in HE",
+            "Critical Pedagogies"
+        ]
+    },
+    {
+        "name": "Dr Rhian Meara",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/r.h.meara/",
+        "email": "r.h.meara@swansea.ac.uk",
+        "tel": "01792 513364",
+        "expertise": [
+            "Accessibility in Higher Education",
+            "British Sign Language",
+            "Natural Hazards",
+            "Physical Volcanology",
+            "Geochemistry",
+            "Archive use in Physical Geography and Geology"
+        ]
+    },
+    {
+        "name": "Dr Chris Muellerleile",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/muellerleilecm/",
+        "email": "c.m.muellerleile@swansea.ac.uk",
+        "tel": "01792 295481",
+        "expertise": [
+            "Financial geography, financialization, and financial markets",
+            "Urban financial centres",
+            "Money",
+            "Markets and marketization",
+            "Commodities and commodification",
+            "Knowledge and information economies",
+            "Open access publishing",
+            "Chicago"
+        ]
+    },
+    {
+        "name": "Professor Tavi Murray",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/t.murray/",
+        "email": "t.murray@swansea.ac.uk",
+        "tel": "01792 602269",
+        "expertise": [
+            "Glaciology",
+            "climate change",
+            "environmental geophysics",
+            "glaciers",
+            "ice sheet",
+            "ground-penetrating radar"
+        ]
+    },
+    {
+        "name": "Professor Peter North",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/p.r.j.north/",
+        "email": "p.r.j.north@swansea.ac.uk",
+        "tel": "01792 295234",
+        "expertise": [
+            "Satellite remote sensing of land and atmosphere",
+            "Modelling of land surface interation with the atmosphere"
+        ]
+    },
+    {
+        "name": "Dr Anna Pigott",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/anna-pigott/",
+        "email": "a.l.pigott@swansea.ac.uk",
+        "tel": "01792 295141",
+        "expertise": [
+            "Environment/climate change and society",
+            "Environmental justice",
+            "Social theory",
+            "Cultural geographies",
+            "Stories and narrative",
+            "Environmental Humanities",
+            "Environmental art and creativity"
+        ]
+    },
+    {
+        "name": "Dr Katie Preece",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/preecekj/",
+        "email": "k.j.preece@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Magmatic and volcanic processes",
+            "Volcanic hazards",
+            "Geochronology",
+            "Geochemistry"
+        ]
+    },
+    {
+        "name": "Dr Kevin Rees",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/k.g.rees/",
+        "email": "k.g.rees@swansea.ac.uk",
+        "tel": "01792 295159",
+        "expertise": [
+            "Regional economic development theory",
+            "Innovation Systems",
+            "Industrial clusters and institutional collaboration",
+            "Economies of identity, esp. in creative industries",
+            "Intellectual Property, esp. patent records"
+        ]
+    },
+    {
+        "name": "Dr Iain Robertson",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/i.robertson/",
+        "email": "i.robertson@swansea.ac.uk",
+        "tel": "01792 295184",
+        "expertise": [
+            "stable isotopes",
+            "dendrochronology",
+            "dendroclimatology",
+            "radiocarbon dating",
+            "proxy data",
+            "phytoremediation",
+            "biochar"
+        ]
+    },
+    {
+        "name": "Dr Amanda Rogers",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/a.rogers/",
+        "email": "a.rogers@swansea.ac.uk",
+        "tel": "01792 602612",
+        "expertise": [
+            "The geographies of the performing arts",
+            "Space, place and performance",
+            "The GeoHumanities",
+            "Identity and multiculturalism",
+            "Transnational cultures",
+            "Politics and performance"
+        ]
+    },
+    {
+        "name": "Dr Cristina Santin",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/santinc/",
+        "email": "c.santin@swansea.ac.uk",
+        "tel": "01792 295860",
+        "expertise": [
+            "Wildfires",
+            "Prescribed fires",
+            "Carbon cycle",
+            "Pyrogenic carbon",
+            "Fuels",
+            "Water quality",
+            "Social perceptions of fire",
+            "Soils"
+        ]
+    },
+    {
+        "name": "Professor Sergei Shubin",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/s.v.shubin/",
+        "email": "s.v.shubin@swansea.ac.uk",
+        "tel": "01792 295975",
+        "expertise": [
+            "Inequality: poverty and social exclusion",
+            "Critical geographies of development",
+            "Moving geographies: mobilities and migrations",
+            "Care, relation and community",
+            "Time and temporality",
+            "Post-socialism and Russia",
+            "Rural geographies",
+            "Health, \"madness\""
+        ]
+    },
+    {
+        "name": "Dr Richard Smith",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/r.g.smith/",
+        "email": "r.g.smith@swansea.ac.uk",
+        "tel": "01792 602558",
+        "expertise": [
+            "Baudrillard Studies",
+            "Poststructuralism",
+            "Photography",
+            "World Cities",
+            "Global Cities"
+        ]
+    },
+    {
+        "name": "Professor Alayne Street-Perrott",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/f.a.street-perrott/",
+        "email": "f.a.street-perrott@swansea.ac.uk",
+        "tel": "01792 295910",
+        "expertise": [
+            "Palaeoclimatology",
+            "Palaeolimnology",
+            "Tropical Palaeoenvironments",
+            "Stable Isotopes; long-term changes in the carbon cycle in the tropics."
+        ]
+    },
+    {
+        "name": "Dr Emilia Urbanek",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/e.urbanek/",
+        "email": "e.urbanek@swansea.ac.uk",
+        "tel": "01792 602559",
+        "expertise": [
+            "Soil water repellency",
+            "CO2 emissions from soil",
+            "Fire affected soils",
+            "Soil management to mitigate and adapt to climate change",
+            "Data analysis"
+        ]
+    },
+    {
+        "name": "Dr Jamie Williams",
+        "department": "geography",
+        "url": "https://www.swansea.ac.uk/staff/science/geography/williamsj/",
+        "email": "jamie.williams@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "River catchment hydrology-vegetation interactions,",
+            "Geospatial technologies,",
+            "Citizen science tools and technologies."
+        ]
+    },
+    {
+        "name": "Dr Edwin Beggs",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/e.j.beggs/",
+        "email": "e.j.beggs@swansea.ac.uk",
+        "tel": "01792 602758",
+        "expertise": [
+            "Algebra",
+            "Differential Geometry",
+            "Noncommutative geometry",
+            "Solitons and integrable systems",
+            "Theoretical physics",
+            "Computability of physical systems",
+            "Theory of measurement"
+        ]
+    },
+    {
+        "name": "Prof. Tomasz Brzezinski",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/t.brzezinski/",
+        "email": "t.brzezinski@swansea.ac.uk",
+        "tel": "01792 295460",
+        "expertise": [
+            "Algebra",
+            "Noncommutative Geometry",
+            "Category Theory",
+            "Hopf algebras",
+            "Corings and comodules",
+            "Ring theory",
+            "Module theory",
+            "Algebraic structures"
+        ]
+    },
+    {
+        "name": "Prof. Elaine Crooks",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/e.c.m.crooks/",
+        "email": "e.c.m.crooks@swansea.ac.uk",
+        "tel": "01792 602387",
+        "expertise": [
+            "Nonlinear partial differential equations",
+            "Singular limits of elliptic and parabolic systems",
+            "Reaction-diffusion-convection systems and travelling waves",
+            "Applications of PDE to biology",
+            "Geometric methods for image processing"
+        ]
+    },
+    {
+        "name": "Dr Martin Crossley",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/m.d.crossley/",
+        "email": "m.d.crossley@swansea.ac.uk",
+        "tel": "01792 602759",
+        "expertise": [
+            "Hopf algebras",
+            "Modular representation theory",
+            "Cohomology operations",
+            "Algebraic completions",
+            "Algebraic combinatorics"
+        ]
+    },
+    {
+        "name": "Prof. Ian Davies",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/i.m.davies/",
+        "email": "i.m.davies@swansea.ac.uk",
+        "tel": "01792 602760",
+        "expertise": [
+            "Functional Integration",
+            "Asymptotics",
+            "Stochastic Analysis"
+        ]
+    },
+    {
+        "name": "Dr Dmitri Finkelshtein",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/d.l.finkelshtein/",
+        "email": "d.l.finkelshtein@swansea.ac.uk",
+        "tel": "01792 606291",
+        "expertise": [
+            "Complex Systems",
+            "Infinite-Dimensional Analysis",
+            "Point Processes",
+            "Non-local Evolution Equations",
+            "Population Ecology",
+            "Umbral Calculus"
+        ]
+    },
+    {
+        "name": "Dr Grigory Garkusha",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/g.garkusha/",
+        "email": "g.garkusha@swansea.ac.uk",
+        "tel": "01792 602761",
+        "expertise": [
+            "Motivic homotopy theory",
+            "Algebraic K-theory",
+            "Algebraic geometry",
+            "Category theory",
+            "Rings and modules theory"
+        ]
+    },
+    {
+        "name": "Prof. Jeff Giansiracusa",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/j.h.giansiracusa/",
+        "email": "j.h.giansiracusa@swansea.ac.uk",
+        "tel": "01792 205087",
+        "expertise": [
+            "Topological Data Analysis",
+            "Homotopy Theory",
+            "Moduli Spaces",
+            "Tropical Geometry"
+        ]
+    },
+    {
+        "name": "Dr John Harvey",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/harveyjm/",
+        "email": "j.m.harvey@swansea.ac.uk",
+        "tel": "",
+        "expertise": [
+            "Geometry",
+            "Topology",
+            "Topological data analysis"
+        ]
+    },
+    {
+        "name": "Prof Biagio Lucini",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/lucini-b/",
+        "email": "b.lucini@swansea.ac.uk",
+        "tel": "01792 602284",
+        "expertise": [
+            "Numerical Methods and Algorithms",
+            "Theoretical Particle Physics",
+            "Lattice Gauge Theories",
+            "Strongly interacting systems",
+            "Critical Phenomena",
+            "Monte Carlo Algorithms",
+            "Machine Learning",
+            "High-Performance Computing"
+        ]
+    },
+    {
+        "name": "Dr Sofya Lyakhova",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/s.lyakhova/",
+        "email": "s.lyakhova@swansea.ac.uk",
+        "tel": "01792 602793",
+        "expertise": [
+            "Mathematical Education",
+            "Mathematical Analysis",
+            "Differential Equations"
+        ]
+    },
+    {
+        "name": "Prof. Eugene Lytvynov",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/e.lytvynov/",
+        "email": "e.lytvynov@swansea.ac.uk",
+        "tel": "01792 602156",
+        "expertise": [
+            "Infinite dimensional analysis",
+            "Point processes and random measures",
+            "Noncommutative probability",
+            "Umbral calculus"
+        ]
+    },
+    {
+        "name": "Dr Carlo Mercuri",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/c.mercuri/",
+        "email": "c.mercuri@swansea.ac.uk",
+        "tel": "01792 602762",
+        "expertise": [
+            "c.mercuri"
+        ]
+    },
+    {
+        "name": "Prof. Vitaly Moroz",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/v.moroz/",
+        "email": "v.moroz@swansea.ac.uk",
+        "tel": "01792 602763",
+        "expertise": [
+            "Nonlinear Partial Differential Equations",
+            "Calculus of Variations",
+            "Potential theory"
+        ]
+    },
+    {
+        "name": "Dr Andrew Neate",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/a.d.neate/",
+        "email": "a.d.neate@swansea.ac.uk",
+        "tel": "01792 602092",
+        "expertise": [
+            "Stochastic analysis",
+            "Stochastic mechanics",
+            "Quantum mechanics",
+            "Mathematics Education"
+        ]
+    },
+    {
+        "name": "Dr Gibin Powathil",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/g.g.powathil/",
+        "email": "g.g.powathil@swansea.ac.uk",
+        "tel": "01792 606255",
+        "expertise": [
+            "Mathematical Biology",
+            "Mathematical Oncology",
+            "Multiscale Cancer Modelling",
+            "Modelling Anticancer therapies",
+            "Applications of Imaging Techniques in Cancer Modelling",
+            "Computational Mathematics"
+        ]
+    },
+    {
+        "name": "Dr Nelly Villamizar",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/villamizarny/",
+        "email": "n.y.villamizar@swansea.ac.uk",
+        "tel": "01792 605852",
+        "expertise": [
+            "Applied Algebraic Geometry",
+            "Commutative Algebra",
+            "Spline Approximation",
+            "Algebraic Spline Geometry",
+            "Computer Aided Geometric Design"
+        ]
+    },
+    {
+        "name": "Dr Randy Wright",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/randall.wright/",
+        "email": "randall.wright@swansea.ac.uk",
+        "tel": "01792 604614",
+        "expertise": [
+            "Actuarial mathematics and statistics",
+            "Life assurance and annuity product development and in-force management",
+            "Composition operator theory on Banach spaces of analytic functions"
+        ]
+    },
+    {
+        "name": "Prof. Jiang-Lun Wu",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/j.l.wu/",
+        "email": "j.l.wu@swansea.ac.uk",
+        "tel": "01792 602757",
+        "expertise": [
+            "Stochastic analysis",
+            "Stochastic processes and modelling",
+            "Probability theory and mathematical statistics",
+            "Functional analysis and infinite dimensional analysis",
+            "Partial differential equations",
+            "Mathematical physics and statistical mechanics",
+            "Nonstandard analysis"
+        ]
+    },
+    {
+        "name": "Prof. Chenggui Yuan",
+        "department": "maths",
+        "url": "https://www.swansea.ac.uk/staff/science/maths/c.yuan/",
+        "email": "c.yuan@swansea.ac.uk",
+        "tel": "01792 602228",
+        "expertise": [
+            "Stochastic Analysis",
+            "Population Dynamics",
+            "Financial Mathematics",
+            "Stochastic Control"
+        ]
+    },
+    {
+        "name": "Prof. Ken Meissner / Head of Department",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/meissner-k/",
+        "email": "k.meissner@swansea.ac.uk",
+        "tel": "+44 (0)1792 606453",
+        "expertise": [
+            "Biomedical Optics,",
+            "Optical Spectroscopy,",
+            "Nanomaterials, Sensors,",
+            "Microscopy"
+        ]
+    },
+    {
+        "name": "Prof. Gert Aarts",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/g.aarts/",
+        "email": "g.aarts@swansea.ac.uk",
+        "tel": "+44 (0)1792 295323",
+        "expertise": [
+            "QCD under extreme conditions",
+            "Sign problem in strongly interacting matter",
+            "Quantum field theory",
+            "Advanced computing and data analysis"
+        ]
+    },
+    {
+        "name": "Prof. Chris Allton",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/c.r.allton/",
+        "email": "c.r.allton@swansea.ac.uk",
+        "tel": "+44 (0)1792 295738",
+        "expertise": [
+            "Theoretical Particle Physics",
+            "Lattice gauge theory",
+            "High Performance Computing",
+            "QCD at non-zero temperature and density",
+            "Public Engagement"
+        ]
+    },
+    {
+        "name": "Dr Ardalan Armin",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/armina/",
+        "email": "Ardalan.Armin@swansea.ac.uk",
+        "tel": "+44 (0)1792 604613",
+        "expertise": [
+            "Physics",
+            "Optoelectronics",
+            "Physical chemistry"
+        ]
+    },
+    {
+        "name": "Prof. Adi Armoni",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/a.armoni/",
+        "email": "a.armoni@swansea.ac.uk",
+        "tel": "+44 (0)1792 295848",
+        "expertise": [
+            "Quantum Chromodynamics",
+            "String Theory",
+            "Quantum Field Theory",
+            "Theories of everything"
+        ]
+    },
+    {
+        "name": "Dr Sahar Basiri Esfahani",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/basiri-esfahani-s/",
+        "email": "Sahar.Basiriesfahani@Swansea.ac.uk",
+        "tel": "+44 (0)1792 604789",
+        "expertise": [
+            "quantum optics,",
+            "opto-mechanics,",
+            "open quantum systems,",
+            "quantum measurement and control,",
+            "single-photon,",
+            "two-photon interferometry"
+        ]
+    },
+    {
+        "name": "Dr Will Bryan",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/w.a.bryan/",
+        "email": "w.a.bryan@swansea.ac.uk",
+        "tel": "+44 (0)1792 295301",
+        "expertise": [
+            "Femtosecond electron microscopy and diffraction from gas, liquid and solid phases",
+            "Low-energy electron point-projection microscopy",
+            "Ultrafast electron emission from nanoscale metal tips",
+            "Femtosecond XUV-NIR and UV-NIR pump-probe spectroscopy in gas ph"
+        ]
+    },
+    {
+        "name": "Prof. Mike Charlton",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/m.charlton/",
+        "email": "m.charlton@swansea.ac.uk",
+        "tel": "+44 (0)1792 295372",
+        "expertise": [
+            "Antihydrogen physics",
+            "Positron and positronium physics",
+            "Positron beams and accumulation and manipulation devices.",
+            "Low energy charged particle and gamma-ray detection techniques"
+        ]
+    },
+    {
+        "name": "Prof. Peter Dunstan / Physics Programme Director",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/p.r.dunstan/",
+        "email": "p.r.dunstan@swansea.ac.uk",
+        "tel": "+44 (0)1792 513052",
+        "expertise": [
+            "nano-reporters",
+            "Biospectroscopy",
+            "Cancer diagnostics",
+            "scanning probe microscopy",
+            "tip-enhanced Raman spectroscopy",
+            "nanoparticle functionalisation",
+            "nanoscale physics",
+            "Nano-optics"
+        ]
+    },
+    {
+        "name": "Professor Stefan Eriksson",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/s.j.eriksson/",
+        "email": "s.j.eriksson@swansea.ac.uk",
+        "tel": "+44 (0)1792 602291",
+        "expertise": [
+            "Atomic Physics",
+            "Antihydrogen",
+            "Quantum optics",
+            "Laser Cooling and Trapping",
+            "Bose-Einstein Condensation",
+            "Atom Interferometry",
+            "Laser Spectroscopy"
+        ]
+    },
+    {
+        "name": "Prof. Simon Hands",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/s.j.hands/",
+        "email": "s.j.hands@swansea.ac.uk",
+        "tel": "+44 (0)1792 295013",
+        "expertise": [
+            "Lattice field theory",
+            "Quantum Field theory",
+            "High Performance Computing"
+        ]
+    },
+    {
+        "name": "Prof. Prem Kumar",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/s.p.kumar/",
+        "email": "s.p.kumar@swansea.ac.uk",
+        "tel": "+44 (0)1792 602283",
+        "expertise": [
+            "Quantum Field Theory",
+            "String Theory & Gauge/gravity duality",
+            "Supersymmetric Yang-Mills theories",
+            "Thermal Field Theory",
+            "Random Matrix Models"
+        ]
+    },
+    {
+        "name": "Prof. Niels Madsen",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/n.madsen/",
+        "email": "n.madsen@swansea.ac.uk",
+        "tel": "+44 (0)1792 602652",
+        "expertise": [
+            "Antihydrogen",
+            "Non-neutral plasmas",
+            "Atomic physics",
+            "Laser cooling",
+            "Spectroscopy",
+            "Accelerator physics",
+            "Trapped charged particles"
+        ]
+    },
+    {
+        "name": "Prof. Paul Meredith",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/meredithp/",
+        "email": "paul.meredith@swansea.ac.uk",
+        "tel": "+44 (o)1792 295630",
+        "expertise": [
+            "Solar energy science, technology",
+            "Bioelectronics",
+            "Organic and perovskite semiconductors",
+            "Integrative semiconductor materials",
+            "Photodetectors and optoelectronics",
+            "Electro-optical physics",
+            "Renewable energy policy",
+            "Innovation practises"
+        ]
+    },
+    {
+        "name": "Prof. Carlos Nunez / Undergraduate Admissions Tutor",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/c.nunez/",
+        "email": "c.nunez@swansea.ac.uk",
+        "tel": "+44 (0)1792 602287",
+        "expertise": [
+            "Theoretical Physics",
+            "String Theory and Quantum Field Theory",
+            "Some aspects of Cosmology."
+        ]
+    },
+    {
+        "name": "Dr Kevin O'Keeffe",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/k.okeeffe/",
+        "email": "k.okeeffe@swansea.ac.uk",
+        "tel": "+44 (0)1792 602246",
+        "expertise": [
+            "High harmonic generation",
+            "Femtosecond laser technology",
+            "Adaptive optics",
+            "X-ray microscopy"
+        ]
+    },
+    {
+        "name": "Dr Warren Perkins",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/w.perkins/",
+        "email": "w.perkins@swansea.ac.uk",
+        "tel": "+44 (0)1792 295011",
+        "expertise": [
+            "Perturbative scattering amplitudes in gauge theories"
+        ]
+    },
+    {
+        "name": "Prof. Maurizio Piai",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/m.piai/",
+        "email": "m.piai@swansea.ac.uk",
+        "tel": "+44 (0)1792 602315",
+        "expertise": [
+            "Particle Physics Theory",
+            "Physics Beyond the Standard Model",
+            "Neutrino physics"
+        ]
+    },
+    {
+        "name": "Professor Dave Ritchie",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/ritchieda/",
+        "email": "d.a.ritchie@swansea.ac.uk",
+        "tel": "+44 (0)1792",
+        "expertise": [
+            "Molecular beam epitaxy (MBE)",
+            "Quantum transport in low-dimensional structures",
+            "Terahertz quantum cascade lasers",
+            "Terahertz nanoscopy",
+            "The interaction of THz radiation with quantum devices",
+            "Self-assembled InAs quantum dots",
+            "Single and entangled photon sources"
+        ]
+    },
+    {
+        "name": "Dr Sophie Shermer",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/s.shermer/",
+        "email": "sgs29@swansea.ac.uk",
+        "tel": "+44 (0)1792 602286",
+        "expertise": [
+            "quantum control",
+            "modelling and simulation",
+            "optimization and control",
+            "spin dynamics",
+            "medical imaging (MRI)"
+        ]
+    },
+    {
+        "name": "Prof. Graham Shore",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/g.m.shore/",
+        "email": "g.m.shore@swansea.ac.uk",
+        "tel": "+44 (0)1792 295737",
+        "expertise": [
+            "Quantum Field Theory",
+            "General Relativity and Gravity",
+            "Particle Physics",
+            "Cosmology"
+        ]
+    },
+    {
+        "name": "Dr Gianmassimo Tasinato",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/g.tasinato/",
+        "email": "g.tasinato@swansea.ac.uk",
+        "tel": "+44 (0)1792 295847",
+        "expertise": [
+            "Theoretical Cosmology"
+        ]
+    },
+    {
+        "name": "Dr Daniel Thompson / PGR Admissions Tutor (Theory)",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/thompsondc/",
+        "email": "d.c.thompson@swansea.ac.uk",
+        "tel": "+44 (0)1792 604612",
+        "expertise": [
+            "String Theory",
+            "Supergravity",
+            "Quantum Field Theory",
+            "Integrable models",
+            "Dualities and geometry"
+        ]
+    },
+    {
+        "name": "Prof. Dirk Peter van der Werf",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/d.p.van.der.werf/",
+        "email": "d.p.van.der.werf@swansea.ac.uk",
+        "tel": "+44 (0)1792 513053",
+        "expertise": [
+            "Positron Phyics",
+            "Positronium Physics",
+            "Antimatter",
+            "Antihydrogen",
+            "Gravitational acceleration of Antimatter"
+        ]
+    },
+    {
+        "name": "Dr Ivonne Zavala",
+        "department": "physics",
+        "url": "https://www.swansea.ac.uk/staff/science/physics/e.i.zavalcarrasco/",
+        "email": "e.i.zavalacarrasco@swansea.ac.uk",
+        "tel": "+44 (0)1792 602294",
+        "expertise": [
+            "Theoretical Cosmology",
+            "String Cosmology"
+        ]
+    }
+]
