@@ -41,7 +41,7 @@
 }
 
 .department {
-	width: calc((100% - 20px) / 6);
+	width: calc((100% - 20px) / 7);
 	display: inline-block;
 }
 
