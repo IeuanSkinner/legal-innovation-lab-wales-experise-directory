@@ -36,8 +36,29 @@
 	padding: 20px 5px;
 }
 
-.filter {
-	margin-bottom: 25px;
+.filter input, .filter select {
+	display: inline-block;
+}
+
+.filter input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.filter select {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.filter input {
+		width: calc(75% - 5px);
+		margin-right: 5px;
+		margin-bottom: 0;
+	}
+
+	.filter select {
+		width: 25%;
+	}
 }
 
 .department {

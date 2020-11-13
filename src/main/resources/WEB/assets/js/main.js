@@ -55,7 +55,7 @@ var displayResults = function(results) {
 
 var search = function() {
 	var filter = window.filter.val();
-	var department = window.departments.filter(':checked').val();
+	var department = window.departments.val();
 	var query = {
 		'from': 0,
 		'size': resultSize,
@@ -111,7 +111,7 @@ $( document ).ready(function() {
 	window.tableBody = $( '#expertise-list tbody' );
 	window.loadMoreBtn = $( '.content button' );
 	window.noResults = $( '.no-results' );
-	window.departments = $( 'input[name="department"]' );
+	window.departments = $( 'select[name="departments"]' );
 
 	// Search on page load.
 	search();
