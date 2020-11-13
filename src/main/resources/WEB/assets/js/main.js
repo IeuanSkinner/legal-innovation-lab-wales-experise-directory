@@ -33,6 +33,12 @@ var displayResults = function(results) {
 		window.loadMoreBtn.removeClass('hidden');
 	}
 
+	if (hits.length === 0) {
+		window.noResults.removeClass('hidden');
+	} else {
+		window.noResults.addClass('hidden');
+	}
+
 	hits.forEach(function (staffMember) {
 		var data = staffMember['_source'];
 		var name = highlightResult(data.name);
@@ -49,7 +55,7 @@ var displayResults = function(results) {
 
 var search = function() {
 	var filter = window.filter.val();
-	var department = $( 'input[name="department"]:checked ').val();
+	var department = window.departments.val();
 	var query = {
 		'from': 0,
 		'size': resultSize,
@@ -102,14 +108,16 @@ var search = function() {
 
 $( document ).ready(function() {
 	window.filter = $( '.filter input' );
-	window.tableBody = $('#expertise-list tbody');
+	window.tableBody = $( '#expertise-list tbody' );
 	window.loadMoreBtn = $( '.content button' );
+	window.noResults = $( '.no-results' );
+	window.departments = $( 'input[name="department"]' );
 
 	// Search on page load.
 	search();
 
 	// Search when department has changed.
-	$( 'input[name="department"]' ).change(search);
+	window.departments.change(search);
 
 	// Search after uses types.
 	window.filter.on('keyup', function() {

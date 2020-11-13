@@ -57,7 +57,7 @@ span.highlight {
 	background-color: yellow;
 }
 
-button.hidden {
+.hidden {
 	display: none;
 }
 
