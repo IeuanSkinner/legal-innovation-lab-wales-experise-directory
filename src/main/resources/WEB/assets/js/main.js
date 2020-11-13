@@ -55,7 +55,7 @@ var displayResults = function(results) {
 
 var search = function() {
 	var filter = window.filter.val();
-	var department = window.departments.val();
+	var department = window.departments.filter(':checked').val();
 	var query = {
 		'from': 0,
 		'size': resultSize,
