@@ -1,6 +1,7 @@
 .content {
 	max-width: 1100px;
 	margin: 15px auto;
+	position: relative;
 }
 
 .content h1, .content h5, .filter, .department {
@@ -35,12 +36,6 @@
 	margin-bottom: 25px;
 }
 
-.filter input {
-	width: 400px;
-	padding: 10px;
-	border: 1px solid #dee2e6;
-}
-
 .department {
 	width: calc((100% - 20px) / 6);
 	display: inline-block;
@@ -56,4 +51,24 @@ input[name="department"] {
 
 span.highlight {
 	background-color: yellow;
+}
+
+button.hidden {
+	display: none;
+}
+
+button {
+	position: absolute;
+	margin: 25px 0;
+	left: 25%;
+	width: 50%;
+	background-color: #242F60;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+button:hover {
+	text-decoration: underline;
 }

@@ -1,3 +1,5 @@
+var resultSize = 10;
+
 var highlightResult = function(result) {
 	var filter = window.filter.val();
 
@@ -15,13 +17,23 @@ var highlightResult = function(result) {
 	});
 
 	return result;
-}
+};
 
 var displayResults = function(results) {
-	var tableBody = $('#expertise-list tbody');
-	tableBody.empty();
+	window.tableBody.empty();
 
-	results.hits.hits.forEach(function( staffMember ) {
+	var hits = results.hits.hits;
+
+	// No. of hits less than or equal to number we display therefore button can be hidden OR
+	// no. of hits is equal to the number we're displaying therefore we've loaded as many as we can.
+	if (hits.length < resultSize || hits.length === window.tableBody.children().length) {
+		window.loadMoreBtn.addClass('hidden');
+		resultSize = 10; // Reset count for subsequent searches.
+	} else {
+		window.loadMoreBtn.removeClass('hidden');
+	}
+
+	hits.forEach(function (staffMember) {
 		var data = staffMember['_source'];
 		var name = highlightResult(data.name);
 		var expertise = highlightResult(data.expertise.join(', '));
@@ -29,16 +41,18 @@ var displayResults = function(results) {
 		var tpl = '<tr>' +
 			'<td><a href="' + data.url + '">' + name + '</a></td>' +
 			'<td>' + expertise + '</td>' +
-		'</tr>';
+			'</tr>';
 
-		tableBody.append(tpl);
+		window.tableBody.append(tpl);
 	});
-}
+};
 
 var search = function() {
 	var filter = window.filter.val();
 	var department = $( 'input[name="department"]:checked ').val();
 	var query = {
+		'from': 0,
+		'size': resultSize,
 		'query': {
 			'bool': {}
 		}
@@ -53,10 +67,16 @@ var search = function() {
 		}];
 	}
 
+	// If a user has entered some filter terms then the search result should contain at least one of those terms.
 	if (filter) {
 		query.query.bool['should'] = [];
 
 		filter.split(' ').forEach(function(term) {
+			query.query.bool.should.push({
+				'wildcard': {
+					'name': '*'+term+'*'
+				}
+			});
 			query.query.bool.should.push({
 				'wildcard': {
 					'expertise': '*'+term+'*'
@@ -82,6 +102,8 @@ var search = function() {
 
 $( document ).ready(function() {
 	window.filter = $( '.filter input' );
+	window.tableBody = $('#expertise-list tbody');
+	window.loadMoreBtn = $( '.content button' );
 
 	// Search on page load.
 	search();
@@ -92,5 +114,10 @@ $( document ).ready(function() {
 	// Search after uses types.
 	window.filter.on('keyup', function() {
 		setTimeout(search, 500);
+	});
+
+	window.loadMoreBtn.on('click', function() {
+		resultSize += 10;
+		search();
 	});
 });
