@@ -8,7 +8,7 @@
 	position: relative;
 }
 
-.content h1, .content h5, .filter, .department {
+.content h1, .content h2, .filter, .department {
 	text-align: center;
 }
 
