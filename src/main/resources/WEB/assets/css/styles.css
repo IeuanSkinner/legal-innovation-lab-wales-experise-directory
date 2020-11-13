@@ -1,0 +1,59 @@
+.content {
+	max-width: 1100px;
+	margin: 15px auto;
+}
+
+.content h1, .content h5, .filter, .department {
+	text-align: center;
+}
+
+#expertise-list {
+	width: 100%;
+}
+
+#expertise-list thead {
+	font-weight: bold;
+}
+
+#expertise-list tr {
+	border-bottom: 1px solid #dee2e6;
+}
+
+#expertise-list td:first-child {
+	width: 25%;
+}
+
+#expertise-list td:last-child {
+	width: 75%;
+}
+
+#expertise-list td {
+	padding: 20px 5px;
+}
+
+.filter {
+	margin-bottom: 25px;
+}
+
+.filter input {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #dee2e6;
+}
+
+.department {
+	width: calc((100% - 20px) / 6);
+	display: inline-block;
+}
+
+.department label:hover, .department input:hover {
+	cursor: pointer;
+}
+
+input[name="department"] {
+	vertical-align: middle;
+}
+
+span.highlight {
+	background-color: yellow;
+}
