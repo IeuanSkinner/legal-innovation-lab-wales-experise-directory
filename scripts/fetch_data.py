@@ -26,7 +26,8 @@ def get_staff_data(department):
         # Setup staff page name + url if link exists, taking staff name from link is preferable
         # for Physics department as they sometimes group name + role in this column but not in link.
         if staff_page_link is not None:
-            staff_name = clean_text(staff_page_link.text)
+            # Some physicists have their link set as name / role hence the need to split here.
+            staff_name = clean_text(staff_page_link.text.split('/')[0])
             staff_page_link_url = staff_page_link.get('href')
             # Handle relative URLs
             staff_url = staff_page_link_url if staff_page_link_url.startswith(url_prefix) else url + staff_page_link_url

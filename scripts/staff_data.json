@@ -1471,10 +1471,7 @@
         "tel": "01792 602558",
         "expertise": [
             "Baudrillard Studies",
-            "Poststructuralism",
-            "Photography",
-            "World Cities",
-            "Global Cities"
+            "Urban Studies"
         ]
     },
     {
@@ -1791,7 +1788,7 @@
         ]
     },
     {
-        "name": "Prof. Ken Meissner / Head of Department",
+        "name": "Prof. Ken Meissner",
         "department": "physics",
         "url": "https://www.swansea.ac.uk/staff/science/physics/meissner-k/",
         "email": "k.meissner@swansea.ac.uk",
@@ -1897,7 +1894,7 @@
         ]
     },
     {
-        "name": "Prof. Peter Dunstan / Physics Programme Director",
+        "name": "Prof. Peter Dunstan",
         "department": "physics",
         "url": "https://www.swansea.ac.uk/staff/science/physics/p.r.dunstan/",
         "email": "p.r.dunstan@swansea.ac.uk",
@@ -1989,7 +1986,7 @@
         ]
     },
     {
-        "name": "Prof. Carlos Nunez / Undergraduate Admissions Tutor",
+        "name": "Prof. Carlos Nunez",
         "department": "physics",
         "url": "https://www.swansea.ac.uk/staff/science/physics/c.nunez/",
         "email": "c.nunez@swansea.ac.uk",
@@ -2089,7 +2086,7 @@
         ]
     },
     {
-        "name": "Dr Daniel Thompson / PGR Admissions Tutor (Theory)",
+        "name": "Dr Daniel Thompson",
         "department": "physics",
         "url": "https://www.swansea.ac.uk/staff/science/physics/thompsondc/",
         "email": "d.c.thompson@swansea.ac.uk",
