@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 from cleantext import clean
 
-cos_departments = ['biosciences'] #, 'chemistry', 'compsci', 'geography', 'maths', 'physics']
+cos_departments = ['biosciences', 'chemistry', 'compsci', 'geography', 'maths', 'physics']
 staff_data = []
 missing_aoe = []
 missing_page = []
