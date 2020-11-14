@@ -1,0 +1,30 @@
+name: Fetch & Index Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 clean-text[gpl] elasticsearch
+      - name: Fetch Staff Data
+        run: |
+           python3 scripts/fetch_data.py
+      - name: Index Staff Data
+        run: |
+           python3 scripts/index_data.py
+        env:
+          CLOUD_ID: ${{ secrets.CLOUD_ID }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PW: ${{ secrets.ES_PW }}
