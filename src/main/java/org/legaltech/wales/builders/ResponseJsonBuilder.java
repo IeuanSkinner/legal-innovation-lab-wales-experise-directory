@@ -1,36 +1,32 @@
 package org.legaltech.wales.builders;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.legaltech.wales.constants.QueryTerms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-import static org.legaltech.wales.builders.QueryBuilder.WILDCARD;
+@ApplicationScoped
+public class ResponseJsonBuilder extends JsonBuilder {
 
-public class ResponseBuilder {
-
-	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseBuilder.class);
-	private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseJsonBuilder.class);
 
 	private static final String BUILD_RESPONSE_ERROR = "Unable to build response for query [{}]!";
 	private static final String EMPTY = "";
-	private static final String HITS = "hits";
-	private static final String QUERY_TERMS = "queryTerms";
-	private static final String RESULTS = "results";
 
-	public static Response build(Response response, JsonNode dataNode) {
+	public Response build(Response response, JsonNode dataNode) {
 		try {
 			JsonNode responseEntity = OBJECT_MAPPER.readTree(response.readEntity(String.class));
 
 			ObjectNode newResponseEntity = OBJECT_MAPPER.createObjectNode();
-			newResponseEntity.set(RESULTS, responseEntity.get(HITS).get(HITS));
-			newResponseEntity.set(QUERY_TERMS, getQueryTerms(dataNode));
+			newResponseEntity.set(QueryTerms.RESULTS.lowerCaseName(),
+					responseEntity.get(QueryTerms.HITS.lowerCaseName()).get(QueryTerms.HITS.lowerCaseName()));
+			newResponseEntity.set(QueryTerms.QUERY_TERMS.lowerCaseName(), getQueryTerms(dataNode));
 
 			return Response.ok().entity(newResponseEntity.toString()).build();
 		} catch (IOException e) {
@@ -39,7 +35,7 @@ public class ResponseBuilder {
 		}
 	}
 
-	private static ArrayNode getQueryTerms(JsonNode dataNode) {
+	private ArrayNode getQueryTerms(JsonNode dataNode) {
 		ArrayNode queryTerms = OBJECT_MAPPER.createArrayNode();
 
 		if (dataNode.hasNonNull(QueryTerms.QUERY.lowerCaseName())) {
@@ -50,7 +46,7 @@ public class ResponseBuilder {
 				shouldNode.forEach(queryStringNode -> {
 					String queryTerm = queryStringNode.get(QueryTerms.QUERY_STRING.lowerCaseName())
 							.get(QueryTerms.QUERY.lowerCaseName()).asText();
-					queryTerm = queryTerm.replaceAll("\\Q" + WILDCARD + "\\E", EMPTY);
+					queryTerm = replaceChar(queryTerm, WILDCARD, EMPTY);
 
 					queryTerms.add(queryTerm);
 				});

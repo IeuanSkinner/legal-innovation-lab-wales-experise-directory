@@ -1,0 +1,9 @@
+runtime: java11
+env: standard
+instance_class: B2
+handlers:
+  - url: .*
+    script: auto
+manual_scaling:
+  instances: 3
+network: {}

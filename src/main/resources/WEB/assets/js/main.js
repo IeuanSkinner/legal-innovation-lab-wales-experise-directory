@@ -1,26 +1,29 @@
-var resultSize = 10;
+let resultSize = 10;
 
-var highlightResult = function(result, queryTerms) {
-	queryTerms.forEach(function(term) {
-		var lowerCaseResult = result.toLowerCase();
-		var lowerCaseTerm = term.toLowerCase();
-		var startIndex = lowerCaseResult.indexOf(lowerCaseTerm);
+const highlightResult = (result, queryTerms) => {
+	queryTerms.forEach(term => {
+		const lowerCaseResult = result.toLowerCase();
+		const lowerCaseTerm = term.toLowerCase();
+		const startIndex = lowerCaseResult.indexOf(lowerCaseTerm);
 
 		if (startIndex > -1) {
-			var endIndex = startIndex + term.length;
-			result = result.slice(0, startIndex) +
-				'<span class="highlight">' + result.slice(startIndex, endIndex) + '</span>' + result.slice(endIndex);
+			const endIndex = startIndex + term.length;
+			const beginning = result.slice(0, startIndex);
+			const highlight = result.slice(startIndex, endIndex);
+			const end = result.slice(endIndex);
+
+			result = `${beginning}<span class="highlight">${highlight}</span>${end}`;
 		}
 	});
 
 	return result;
 };
 
-var displayResults = function(data) {
+const displayResults = data => {
 	window.tableBody.empty();
 
-	var results = data.results;
-	var queryTerms = data.queryTerms;
+	const results = data['results'];
+	const queryTerms = data['query_terms'];
 
 	// No. of hits less than or equal to number we display therefore button can be hidden OR
 	// no. of hits is equal to the number we're displaying therefore we've loaded as many as we can.
@@ -37,47 +40,41 @@ var displayResults = function(data) {
 		window.noResults.addClass('hidden');
 	}
 
-	results.forEach(function (staffMember) {
-		var data = staffMember['_source'];
-		var name = highlightResult(data.name, queryTerms);
+	results.forEach(staffMember => {
+		const data = staffMember['_source'];
+		const name = highlightResult(data['name'], queryTerms);
 
-		for (var i = 0; i < data.expertise.length; i++) {
-			data.expertise[i] = highlightResult(data.expertise[i], queryTerms);
+		for (let i = 0; i < data['expertise'].length; i++) {
+			data['expertise'][i] = highlightResult(data['expertise'][i], queryTerms);
 		}
 
-		var tpl = '<tr>' +
-			'<td><a href="' + data.url + '">' + name + '</a></td>' +
-			'<td>' + data.expertise.join(document.body.offsetWidth <= 768 ? '<br>' : ', ') + '</td>' +
-			'</tr>';
+		const expertise = data['expertise'].join(document.body.offsetWidth <= 768 ? '<br>' : ', ');
+		const row = `<tr><td><a href="${data['url']}">${name}</a></td><td>${expertise}</td></tr>`;
 
-		window.tableBody.append(tpl);
+		window.tableBody.append(row);
 	});
 };
 
-var search = function() {
-	var filter = window.filter.val();
-	var department = window.departments.val();
-	var query = {
-		'from': 0,
-		'size': resultSize,
-		'department': department,
-		'filterTerms': filter
-	};
-
+const search = () => {
 	$.ajax({
-		type: "POST",
+		type: 'POST',
 		url: '/search',
 		dataType: 'json',
 		contentType: 'application/json',
-		data: JSON.stringify(query),
+		data: JSON.stringify({
+			'from': 0,
+			'size': resultSize,
+			'department': window.departments.val(),
+			'filter_terms': window.filter.val()
+		}),
 		success: displayResults,
-		fail: function() {
+		fail: () => {
 			alert('Unable to get search results!');
 		}
 	});
 };
 
-$( document ).ready(function() {
+$( document ).ready(() => {
 	window.filter = $( '.filter input' );
 	window.tableBody = $( '#expertise-list tbody' );
 	window.loadMoreBtn = $( '.content button' );
@@ -91,11 +88,9 @@ $( document ).ready(function() {
 	window.departments.change(search);
 
 	// Search after uses types.
-	window.filter.on('keyup', function() {
-		setTimeout(search, 500);
-	});
+	window.filter.on('keyup', _.debounce(search, 300));
 
-	window.loadMoreBtn.on('click', function() {
+	window.loadMoreBtn.on('click', () => {
 		resultSize += 10;
 		search();
 	});

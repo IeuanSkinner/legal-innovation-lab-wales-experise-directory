@@ -1,39 +1,35 @@
 package org.legaltech.wales.builders;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.legaltech.wales.constants.QueryTerms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.enterprise.context.ApplicationScoped;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class QueryBuilder {
+@ApplicationScoped
+public class QueryJsonBuilder extends JsonBuilder {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(QueryBuilder.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(QueryJsonBuilder.class);
 
-	private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
-
-	private static final String ALL = "all";
 	private static final String DATA_READ_EXCEPTION = "Data [{}] could not be read into JSON structure.";
-	private static final String DEPARTMENT = "department";
-	private static final String EXPERTISE_FIELD = "expertise";
-	private static final String FILTER_TERMS = "filterTerms";
+
 	private static final int MINIMUM_MATCH = 1;
-	private static final String NAME_FIELD = "name";
 	private static final String SEPARATOR = "[\\s,]+";
 	private static final String SPACE = " ";
-	private static final ArrayNode QUERY_FIELDS = OBJECT_MAPPER.createArrayNode().add(NAME_FIELD).add(EXPERTISE_FIELD);
+	private static final int START = 0;
+
+	private static final ArrayNode QUERY_FIELDS = OBJECT_MAPPER.createArrayNode()
+			.add(QueryTerms.NAME.lowerCaseName()).add(QueryTerms.EXPERTISE.lowerCaseName());
 	private static final String[] ESCAPE_CHARS = new String[] {
 			"+","-","=","&&","||",">","<","!","(",")","{","}","[","]","^","\"","~","*","?",":","\\","/"
 	};
 
-	static final String WILDCARD = "*";
-
-	public static JsonNode build(String data) {
+	public JsonNode build(String data) {
 		ObjectNode queryNode = OBJECT_MAPPER.createObjectNode();
 
 		try {
@@ -41,7 +37,7 @@ public class QueryBuilder {
 
 			if (dataNode.size() > 0) {
 				// Size of results to return.
-				queryNode.put(QueryTerms.FROM.lowerCaseName(), 0);
+				queryNode.put(QueryTerms.FROM.lowerCaseName(), START);
 				queryNode.put(QueryTerms.SIZE.lowerCaseName(), dataNode.get(QueryTerms.SIZE.lowerCaseName()).asInt());
 
 				// Query logic for the search request.
@@ -57,18 +53,18 @@ public class QueryBuilder {
 		return queryNode;
 	}
 
-	private static JsonNode buildBoolNode(JsonNode dataNode) {
+	private JsonNode buildBoolNode(JsonNode dataNode) {
 		ObjectNode boolNode = OBJECT_MAPPER.createObjectNode();
 
-		if (dataNode.hasNonNull(DEPARTMENT)) {
-			String department = dataNode.get(DEPARTMENT).asText();
+		if (dataNode.hasNonNull(QueryTerms.DEPARTMENT.lowerCaseName())) {
+			String department = dataNode.get(QueryTerms.DEPARTMENT.lowerCaseName()).asText();
 
-			if (!ALL.equalsIgnoreCase(department)) {
+			if (!QueryTerms.ALL.lowerCaseName().equalsIgnoreCase(department)) {
 				boolNode.set(QueryTerms.MUST.lowerCaseName(), buildMustNode(department));
 			}
 		}
 
-		if (dataNode.hasNonNull(FILTER_TERMS)) {
+		if (dataNode.hasNonNull(QueryTerms.FILTER_TERMS.lowerCaseName())) {
 			boolNode.set(QueryTerms.SHOULD.lowerCaseName(), buildShouldArrayNode(dataNode));
 			boolNode.put(QueryTerms.MINIMUM_SHOULD_MATCH.lowerCaseName(), MINIMUM_MATCH);
 		}
@@ -77,12 +73,12 @@ public class QueryBuilder {
 	}
 
 	// These are values that the search result *must* contain.
-	private static ArrayNode buildMustNode(String department) {
+	private ArrayNode buildMustNode(String department) {
 		ArrayNode mustNode = OBJECT_MAPPER.createArrayNode();
 		ObjectNode matchPhraseNode = OBJECT_MAPPER.createObjectNode();
 		ObjectNode departmentNode = OBJECT_MAPPER.createObjectNode();
 
-		departmentNode.put(DEPARTMENT, department);
+		departmentNode.put(QueryTerms.DEPARTMENT.lowerCaseName(), department);
 		matchPhraseNode.set(QueryTerms.MATCH_PHRASE.lowerCaseName(), departmentNode);
 		mustNode.add(matchPhraseNode);
 
@@ -90,8 +86,8 @@ public class QueryBuilder {
 	}
 
 	// These are values that the search result *should* contain at least part of.
-	private static ArrayNode buildShouldArrayNode(JsonNode dataNode) {
-		String filterTerms = clean(dataNode.get(FILTER_TERMS).asText());
+	private ArrayNode buildShouldArrayNode(JsonNode dataNode) {
+		String filterTerms = clean(dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText());
 		ArrayNode shouldNode = OBJECT_MAPPER.createArrayNode();
 
 		Arrays.stream(filterTerms.split(SEPARATOR)).forEach(filterTerm -> {
@@ -106,9 +102,9 @@ public class QueryBuilder {
 		return shouldNode;
 	}
 
-	private static String clean(String str) {
+	private String clean(String str) {
 		for (String escapeChar : ESCAPE_CHARS) {
-			str = str.replaceAll("\\Q" + escapeChar + "\\E", SPACE);
+			str = replaceChar(str, escapeChar, SPACE);
 		}
 		return str;
 	}
