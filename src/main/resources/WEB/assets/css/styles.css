@@ -24,16 +24,20 @@
 	border-bottom: 1px solid #dee2e6;
 }
 
-#expertise-list td:first-child {
-	width: 25%;
-}
-
-#expertise-list td:last-child {
-	width: 75%;
-}
-
 #expertise-list td {
+	width: 50%;
 	padding: 20px 5px;
+	line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+	#expertise-list td:first-child {
+		width: 25%;
+	}
+
+	#expertise-list td:last-child {
+		width: 75%;
+	}
 }
 
 .filter input, .filter select {

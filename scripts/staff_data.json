@@ -38,7 +38,7 @@
             "Marine Invertebrates Physiology",
             "Food safety and security",
             "Sustainable Supply Chains",
-            "Sustainable Marine Production (seaweeds and marine invertebrates; Integrated Multi Trophic Aquaculture)",
+            "Sustainable Marine Production (seaweeds and marine invertebrates Integrated Multi Trophic Aquaculture)",
             "Kelp Ecology"
         ]
     },
@@ -117,7 +117,7 @@
         "tel": "01792 513296",
         "expertise": [
             "Invertebrate Immunology and Haematology",
-            "Protein Structure, Function and Diversity (e.g., hemocyanins and phenoloxidases)",
+            "Protein Structure Function and Diversity (e.g. hemocyanins and phenoloxidases)",
             "Aquaculture and (Shell) Fisheries",
             "Alternative disease models"
         ]
@@ -363,7 +363,7 @@
             "Network Biogeography",
             "Microbiome",
             "Theoretical Ecology",
-            "Global change (invasions, habitat loss, warming)"
+            "Global change (invasions habitat loss warming)"
         ]
     },
     {
@@ -786,12 +786,12 @@
         "email": "m.w.jones@swansea.ac.uk",
         "tel": "01792 513391",
         "expertise": [
-            "Ray Tracing;",
-            "Global Illumination;",
-            "Data Visualization;",
-            "Data Science;",
-            "Time-Series Data;",
-            "Volume Visualization;",
+            "Ray Tracing",
+            "Global Illumination",
+            "Data Visualization",
+            "Data Science",
+            "Time-Series Data",
+            "Volume Visualization",
             "Computer Graphics"
         ]
     },
@@ -886,12 +886,12 @@
         "tel": "01792 606662",
         "expertise": [
             "Machine Learning",
-            "Algorithmic Bias, Fairness, Interpretation.",
+            "Algorithmic Bias Fairness Interpretation.",
             "Pervasive & Persuasive Computing",
             "Human Computer/Data Interaction",
             "Participatory Design",
             "Socio-Technical Decision-Making Systems",
-            "Domains: Health & Well being, Smart Cities, Digital Economy"
+            "Domains: Health & Well being Smart Cities Digital Economy"
         ]
     },
     {
@@ -1020,7 +1020,7 @@
         "tel": "01792 295069",
         "expertise": [
             "Environmental modelling and radiative transfer in vegetation canopies",
-            "Global simulations of carbon, water and energy exchange between the landsurface and the atmosphere",
+            "Global simulations of carbon water and energy exchange between the landsurface and the atmosphere",
             "Parameter retrieval of biophysical properties using optimisation methods"
         ]
     },
@@ -1031,10 +1031,10 @@
         "email": "d.n.m.beljaars@swansea.ac.uk",
         "tel": "",
         "expertise": [
-            "Cultural & Urban, Disability & Health geography",
+            "Cultural & Urban Disability & Health geography",
             "Posthumanism & Post-phenomenology",
-            "Performativity, practices & embodiment",
-            "Compulsion, Mental Health & Tourette Syndrome",
+            "Performativity practices & embodiment",
+            "Compulsion Mental Health & Tourette Syndrome",
             "Interdisciplinarity & knowledge construction in the life sciences",
             "Mobile eye-tracking"
         ]
@@ -1075,14 +1075,14 @@
         "email": "a.c.stephens@swansea.ac.uk",
         "tel": "01792 606287",
         "expertise": [
-            "Critical approaches to the study of nationalism;",
-            "Performance, art and politics;",
-            "Critical security studies;",
-            "Critical theories;",
-            "Creative and artistic methods;",
-            "Cultural and political geographies;",
-            "Cities and citizenship;",
-            "Affect, atmosphere"
+            "Critical approaches to the study of nationalism",
+            "Performance art and politics",
+            "Critical security studies",
+            "Critical theories",
+            "Creative and artistic methods",
+            "Cultural and political geographies",
+            "Cities and citizenship",
+            "Affect atmosphere"
         ]
     },
     {
@@ -1319,7 +1319,7 @@
         "email": "c.m.muellerleile@swansea.ac.uk",
         "tel": "01792 295481",
         "expertise": [
-            "Financial geography, financialization, and financial markets",
+            "Financial geography financialization and financial markets",
             "Urban financial centres",
             "Money",
             "Markets and marketization",
@@ -1394,8 +1394,8 @@
             "Regional economic development theory",
             "Innovation Systems",
             "Industrial clusters and institutional collaboration",
-            "Economies of identity, esp. in creative industries",
-            "Intellectual Property, esp. patent records"
+            "Economies of identity esp. in creative industries",
+            "Intellectual Property esp. patent records"
         ]
     },
     {
@@ -1422,7 +1422,7 @@
         "tel": "01792 602612",
         "expertise": [
             "The geographies of the performing arts",
-            "Space, place and performance",
+            "Space place and performance",
             "The GeoHumanities",
             "Identity and multiculturalism",
             "Transnational cultures",
@@ -1456,11 +1456,11 @@
             "Inequality: poverty and social exclusion",
             "Critical geographies of development",
             "Moving geographies: mobilities and migrations",
-            "Care, relation and community",
+            "Care relation and community",
             "Time and temporality",
             "Post-socialism and Russia",
             "Rural geographies",
-            "Health, \"madness\""
+            "Health \"madness\""
         ]
     },
     {
@@ -1484,7 +1484,7 @@
             "Palaeoclimatology",
             "Palaeolimnology",
             "Tropical Palaeoenvironments",
-            "Stable Isotopes; long-term changes in the carbon cycle in the tropics."
+            "Stable Isotopes long-term changes in the carbon cycle in the tropics."
         ]
     },
     {
@@ -1508,8 +1508,8 @@
         "email": "jamie.williams@swansea.ac.uk",
         "tel": "",
         "expertise": [
-            "River catchment hydrology-vegetation interactions,",
-            "Geospatial technologies,",
+            "River catchment hydrology-vegetation interactions",
+            "Geospatial technologies",
             "Citizen science tools and technologies."
         ]
     },
@@ -1794,9 +1794,9 @@
         "email": "k.meissner@swansea.ac.uk",
         "tel": "+44 (0)1792 606453",
         "expertise": [
-            "Biomedical Optics,",
-            "Optical Spectroscopy,",
-            "Nanomaterials, Sensors,",
+            "Biomedical Optics",
+            "Optical Spectroscopy",
+            "Nanomaterials Sensors",
             "Microscopy"
         ]
     },
@@ -1859,11 +1859,11 @@
         "email": "Sahar.Basiriesfahani@Swansea.ac.uk",
         "tel": "+44 (0)1792 604789",
         "expertise": [
-            "quantum optics,",
-            "opto-mechanics,",
-            "open quantum systems,",
-            "quantum measurement and control,",
-            "single-photon,",
+            "quantum optics",
+            "opto-mechanics",
+            "open quantum systems",
+            "quantum measurement and control",
+            "single-photon",
             "two-photon interferometry"
         ]
     },
@@ -1874,7 +1874,7 @@
         "email": "w.a.bryan@swansea.ac.uk",
         "tel": "+44 (0)1792 295301",
         "expertise": [
-            "Femtosecond electron microscopy and diffraction from gas, liquid and solid phases",
+            "Femtosecond electron microscopy and diffraction from gas liquid and solid phases",
             "Low-energy electron point-projection microscopy",
             "Ultrafast electron emission from nanoscale metal tips",
             "Femtosecond XUV-NIR and UV-NIR pump-probe spectroscopy in gas ph"
@@ -1975,7 +1975,7 @@
         "email": "paul.meredith@swansea.ac.uk",
         "tel": "+44 (o)1792 295630",
         "expertise": [
-            "Solar energy science, technology",
+            "Solar energy science technology",
             "Bioelectronics",
             "Organic and perovskite semiconductors",
             "Integrative semiconductor materials",

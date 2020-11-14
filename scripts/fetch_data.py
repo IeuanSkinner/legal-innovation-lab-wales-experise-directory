@@ -71,6 +71,8 @@ def get_expertise(url):
         for area in expertise_area.find_all('li'):
             text = clean_text(area.text)
             text = text.replace('* ', '')  # Some staff have an odd bullet point character in their AOE
+            text = text.replace(',', '')
+            text = text.replace(';', '')
 
             expertise.append(text)
 

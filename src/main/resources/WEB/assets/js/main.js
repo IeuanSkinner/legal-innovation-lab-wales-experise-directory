@@ -47,7 +47,7 @@ var displayResults = function(data) {
 
 		var tpl = '<tr>' +
 			'<td><a href="' + data.url + '">' + name + '</a></td>' +
-			'<td>' + data.expertise.join(', ') + '</td>' +
+			'<td>' + data.expertise.join(document.body.offsetWidth <= 768 ? '<br>' : ', ') + '</td>' +
 			'</tr>';
 
 		window.tableBody.append(tpl);
