@@ -1,16 +1,13 @@
 var resultSize = 10;
 
-var highlightResult = function(result) {
-	var filter = window.filter.val();
-
-	filter.split(' ').forEach(function(term) {
+var highlightResult = function(result, queryTerms) {
+	queryTerms.forEach(function(term) {
 		var lowerCaseResult = result.toLowerCase();
 		var lowerCaseTerm = term.toLowerCase();
 		var startIndex = lowerCaseResult.indexOf(lowerCaseTerm);
 
 		if (startIndex > -1) {
 			var endIndex = startIndex + term.length;
-
 			result = result.slice(0, startIndex) +
 				'<span class="highlight">' + result.slice(startIndex, endIndex) + '</span>' + result.slice(endIndex);
 		}
@@ -19,34 +16,38 @@ var highlightResult = function(result) {
 	return result;
 };
 
-var displayResults = function(results) {
+var displayResults = function(data) {
 	window.tableBody.empty();
 
-	var hits = results.hits.hits;
+	var results = data.results;
+	var queryTerms = data.queryTerms;
 
 	// No. of hits less than or equal to number we display therefore button can be hidden OR
 	// no. of hits is equal to the number we're displaying therefore we've loaded as many as we can.
-	if (hits.length < resultSize || hits.length === window.tableBody.children().length) {
+	if (results.length < resultSize || results.length === window.tableBody.children().length) {
 		window.loadMoreBtn.addClass('hidden');
 		resultSize = 10; // Reset count for subsequent searches.
 	} else {
 		window.loadMoreBtn.removeClass('hidden');
 	}
 
-	if (hits.length === 0) {
+	if (results.length === 0) {
 		window.noResults.removeClass('hidden');
 	} else {
 		window.noResults.addClass('hidden');
 	}
 
-	hits.forEach(function (staffMember) {
+	results.forEach(function (staffMember) {
 		var data = staffMember['_source'];
-		var name = highlightResult(data.name);
-		var expertise = highlightResult(data.expertise.join(', '));
+		var name = highlightResult(data.name, queryTerms);
+
+		for (var i = 0; i < data.expertise.length; i++) {
+			data.expertise[i] = highlightResult(data.expertise[i], queryTerms);
+		}
 
 		var tpl = '<tr>' +
 			'<td><a href="' + data.url + '">' + name + '</a></td>' +
-			'<td>' + expertise + '</td>' +
+			'<td>' + data.expertise.join(', ') + '</td>' +
 			'</tr>';
 
 		window.tableBody.append(tpl);
@@ -59,39 +60,9 @@ var search = function() {
 	var query = {
 		'from': 0,
 		'size': resultSize,
-		'query': {
-			'bool': {}
-		}
+		'department': department,
+		'filterTerms': filter
 	};
-
-	// If a department radiobutton is selected the query results must belong to that department.
-	if (department && department !== 'all') {
-		query.query.bool['must'] = [{
-			'match_phrase': {
-				'department': department
-			}
-		}];
-	}
-
-	// If a user has entered some filter terms then the search result should contain at least one of those terms.
-	if (filter) {
-		query.query.bool['should'] = [];
-
-		filter.split(' ').forEach(function(term) {
-			query.query.bool.should.push({
-				'wildcard': {
-					'name': '*'+term+'*'
-				}
-			});
-			query.query.bool.should.push({
-				'wildcard': {
-					'expertise': '*'+term+'*'
-				}
-			});
-		});
-
-		query.query.bool['minimum_should_match'] = 1;
-	}
 
 	$.ajax({
 		type: "POST",

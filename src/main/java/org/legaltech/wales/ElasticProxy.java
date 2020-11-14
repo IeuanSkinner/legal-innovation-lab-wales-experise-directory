@@ -1,6 +1,9 @@
 package org.legaltech.wales;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
+import org.legaltech.wales.builders.QueryBuilder;
+import org.legaltech.wales.builders.ResponseBuilder;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -15,6 +18,8 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import static javax.ws.rs.core.Response.Status.OK;
 
 @Path("/search")
 @RequestScoped
@@ -41,13 +46,20 @@ public class ElasticProxy {
 	}
 
 	@POST
-	public Response post(String queryBody) {
+	public Response post(String data) {
 		HttpAuthenticationFeature authenticationFeature =
 				HttpAuthenticationFeature.basic(searchConfig.getUser(), searchConfig.getPassword());
 
 		Client client = ClientBuilder.newClient().register(authenticationFeature);
 		WebTarget webTarget = client.target(searchConfig.getUrl());
 
-		return webTarget.request().post(Entity.json(queryBody));
+		JsonNode dataNode = QueryBuilder.build(data);
+		Response response = webTarget.request().post(Entity.json(dataNode.toString()));
+
+		if (response.getStatus() == OK.getStatusCode()) {
+			return ResponseBuilder.build(response, dataNode);
+		} else {
+			return response;
+		}
 	}
 }
