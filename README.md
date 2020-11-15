@@ -80,8 +80,7 @@ Some key features of this project include
 
 * Departmental filter alongside keyword filter.
 
-* Open API for other developers to search this indexed data, this is as yet undocumented but a future improvement
- would be to do this.
+* Open API for other developers to search this indexed data. [http://localhost:8080/openapi](http://localhost:8080/openapi)
 
 * Mobile friendly UI.
 

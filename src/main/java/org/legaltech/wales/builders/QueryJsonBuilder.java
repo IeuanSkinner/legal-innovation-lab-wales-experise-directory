@@ -4,12 +4,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.commons.lang3.StringUtils;
+import org.legaltech.wales.schemas.FilterRequestBody;
 import org.legaltech.wales.constants.QueryTerms;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.enterprise.context.ApplicationScoped;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,41 +15,30 @@ import java.util.regex.Pattern;
 @ApplicationScoped
 public class QueryJsonBuilder extends JsonBuilder {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(QueryJsonBuilder.class);
-	private static final String DATA_READ_EXCEPTION = "Data [{}] could not be read into JSON structure.";
 	private static final Pattern PATTERN = Pattern.compile("\\w+", Pattern.CASE_INSENSITIVE);
 	private static final ArrayNode QUERY_FIELDS = OBJECT_MAPPER.createArrayNode()
 			.add(QueryTerms.NAME.lowerCaseName())
 			.add(QueryTerms.EXPERTISE.lowerCaseName());
 
-	public JsonNode build(String data) {
+	public JsonNode build(FilterRequestBody filterRequestBody) {
 		ObjectNode queryNode = OBJECT_MAPPER.createObjectNode();
 
-		try {
-			JsonNode dataNode = OBJECT_MAPPER.readTree(data);
+		// Size of results to return.
+		queryNode.put(QueryTerms.FROM.lowerCaseName(), 0);
+		queryNode.put(QueryTerms.SIZE.lowerCaseName(), filterRequestBody.getSize());
 
-			if (dataNode.size() > 0) {
-				// Size of results to return.
-				queryNode.put(QueryTerms.FROM.lowerCaseName(), 0);
-				queryNode.put(QueryTerms.SIZE.lowerCaseName(), dataNode.get(QueryTerms.SIZE.lowerCaseName()).asInt());
-
-				// Query logic for the search request.
-				ObjectNode nestedQueryNode = OBJECT_MAPPER.createObjectNode();
-				nestedQueryNode.set(QueryTerms.BOOL.lowerCaseName(), buildBoolNode(dataNode));
-				queryNode.set(QueryTerms.QUERY.lowerCaseName(), nestedQueryNode);
-				return queryNode;
-			}
-		} catch (IOException e) {
-			LOGGER.error(DATA_READ_EXCEPTION, data, e);
-		}
+		// Query logic for the search request.
+		ObjectNode nestedQueryNode = OBJECT_MAPPER.createObjectNode();
+		nestedQueryNode.set(QueryTerms.BOOL.lowerCaseName(), buildBoolNode(filterRequestBody));
+		queryNode.set(QueryTerms.QUERY.lowerCaseName(), nestedQueryNode);
 
 		return queryNode;
 	}
 
-	private JsonNode buildBoolNode(JsonNode dataNode) {
+	private JsonNode buildBoolNode(FilterRequestBody filterRequestBody) {
 		ObjectNode boolNode = OBJECT_MAPPER.createObjectNode();
-		String department = dataNode.get(QueryTerms.DEPARTMENT.lowerCaseName()).asText();
-		String filterTerms = dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText();
+		String department = filterRequestBody.getDepartment();
+		String filterTerms = filterRequestBody.getFilterTerms();
 
 		if (StringUtils.isNotBlank(department) && !QueryTerms.ALL.lowerCaseName().equalsIgnoreCase(department)) {
 			boolNode.set(QueryTerms.MUST.lowerCaseName(), buildMustNode(department));

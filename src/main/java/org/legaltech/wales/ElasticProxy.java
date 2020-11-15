@@ -1,9 +1,14 @@
 package org.legaltech.wales;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.legaltech.wales.builders.QueryJsonBuilder;
 import org.legaltech.wales.builders.ResponseJsonBuilder;
+import org.legaltech.wales.schemas.FilterRequestBody;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -43,13 +48,18 @@ public class ElasticProxy {
 	}
 
 	@GET
+	@Operation(summary = "Full list",
+			description = "Full list of Swansea Uni College of Science staff members areas of expertise")
 	public Response get() {
 		return webTarget.request().get();
 	}
 
 	@POST
-	public Response post(String data) {
-		JsonNode queryNode = queryBuilder.build(data);
+	@Operation(summary = "Filtered list",
+			description = "Filtered list of Swansea Uni College of Science staff members areas of expertise")
+	public Response post(@RequestBody(description = "Filter Data",
+			content = @Content(schema = @Schema(implementation = FilterRequestBody.class))) FilterRequestBody filterRequestBody) {
+		JsonNode queryNode = queryBuilder.build(filterRequestBody);
 		Response response = webTarget.request().post(Entity.json(queryNode.toString()));
 
 		if (response.getStatus() == OK.getStatusCode()) {

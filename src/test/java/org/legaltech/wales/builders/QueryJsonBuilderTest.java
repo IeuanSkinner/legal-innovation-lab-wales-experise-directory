@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.legaltech.wales.schemas.FilterRequestBody;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,6 +26,6 @@ class QueryJsonBuilderTest {
 		String output = Files.readString(WORKING_DIR.resolve("output/" + fileName));
 		JsonNode outputNode = OBJECT_MAPPER.readTree(output);
 
-		assertEquals(outputNode, QUERY_JSON_BUILDER.build(input));
+		assertEquals(outputNode, QUERY_JSON_BUILDER.build(OBJECT_MAPPER.readValue(input, FilterRequestBody.class)));
 	}
 }

@@ -62,10 +62,9 @@ const search = () => {
 		dataType: 'json',
 		contentType: 'application/json',
 		data: JSON.stringify({
-			'from': 0,
 			'size': resultSize,
 			'department': window.departments.val(),
-			'filter_terms': window.filter.val()
+			'filterTerms': window.filter.val()
 		}),
 		success: displayResults,
 		fail: () => {
