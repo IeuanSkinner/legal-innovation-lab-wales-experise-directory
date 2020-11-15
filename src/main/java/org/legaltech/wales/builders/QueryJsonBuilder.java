@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @ApplicationScoped
 public class QueryJsonBuilder extends JsonBuilder {
@@ -17,17 +19,10 @@ public class QueryJsonBuilder extends JsonBuilder {
 	private static final Logger LOGGER = LoggerFactory.getLogger(QueryJsonBuilder.class);
 
 	private static final String DATA_READ_EXCEPTION = "Data [{}] could not be read into JSON structure.";
-
-	private static final int MINIMUM_MATCH = 1;
-	private static final String SEPARATOR = "[\\s,]+";
-	private static final String SPACE = " ";
-	private static final int START = 0;
-
+	private static final Pattern PATTERN = Pattern.compile("\\w+", Pattern.CASE_INSENSITIVE);
 	private static final ArrayNode QUERY_FIELDS = OBJECT_MAPPER.createArrayNode()
-			.add(QueryTerms.NAME.lowerCaseName()).add(QueryTerms.EXPERTISE.lowerCaseName());
-	private static final String[] ESCAPE_CHARS = new String[] {
-			"+","-","=","&&","||",">","<","!","(",")","{","}","[","]","^","\"","~","*","?",":","\\","/"
-	};
+			.add(QueryTerms.NAME.lowerCaseName())
+			.add(QueryTerms.EXPERTISE.lowerCaseName());
 
 	public JsonNode build(String data) {
 		ObjectNode queryNode = OBJECT_MAPPER.createObjectNode();
@@ -37,7 +32,7 @@ public class QueryJsonBuilder extends JsonBuilder {
 
 			if (dataNode.size() > 0) {
 				// Size of results to return.
-				queryNode.put(QueryTerms.FROM.lowerCaseName(), START);
+				queryNode.put(QueryTerms.FROM.lowerCaseName(), 0);
 				queryNode.put(QueryTerms.SIZE.lowerCaseName(), dataNode.get(QueryTerms.SIZE.lowerCaseName()).asInt());
 
 				// Query logic for the search request.
@@ -66,7 +61,7 @@ public class QueryJsonBuilder extends JsonBuilder {
 
 		if (dataNode.hasNonNull(QueryTerms.FILTER_TERMS.lowerCaseName())) {
 			boolNode.set(QueryTerms.SHOULD.lowerCaseName(), buildShouldArrayNode(dataNode));
-			boolNode.put(QueryTerms.MINIMUM_SHOULD_MATCH.lowerCaseName(), MINIMUM_MATCH);
+			boolNode.put(QueryTerms.MINIMUM_SHOULD_MATCH.lowerCaseName(), 1);
 		}
 
 		return boolNode;
@@ -87,10 +82,11 @@ public class QueryJsonBuilder extends JsonBuilder {
 
 	// These are values that the search result *should* contain at least part of.
 	private ArrayNode buildShouldArrayNode(JsonNode dataNode) {
-		String filterTerms = clean(dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText());
+		ArrayList<String> filterTerms = extractTerms(dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText());
+
 		ArrayNode shouldNode = OBJECT_MAPPER.createArrayNode();
 
-		Arrays.stream(filterTerms.split(SEPARATOR)).forEach(filterTerm -> {
+		filterTerms.forEach(filterTerm -> {
 			ObjectNode queryStringNode = OBJECT_MAPPER.createObjectNode();
 			ObjectNode queryFieldNode = OBJECT_MAPPER.createObjectNode();
 			queryFieldNode.put(QueryTerms.QUERY.lowerCaseName(), WILDCARD + filterTerm + WILDCARD);
@@ -102,10 +98,14 @@ public class QueryJsonBuilder extends JsonBuilder {
 		return shouldNode;
 	}
 
-	private String clean(String str) {
-		for (String escapeChar : ESCAPE_CHARS) {
-			str = replaceChar(str, escapeChar, SPACE);
+	private ArrayList<String> extractTerms(String str) {
+		ArrayList<String> terms = new ArrayList<>();
+		Matcher matcher = PATTERN.matcher(str);
+
+		while (matcher.find()) {
+			terms.add(matcher.group());
 		}
-		return str;
+
+		return terms;
 	}
 }

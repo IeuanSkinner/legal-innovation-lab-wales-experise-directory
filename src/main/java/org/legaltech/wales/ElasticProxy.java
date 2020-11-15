@@ -49,11 +49,11 @@ public class ElasticProxy {
 
 	@POST
 	public Response post(String data) {
-		JsonNode dataNode = queryBuilder.build(data);
-		Response response = webTarget.request().post(Entity.json(dataNode.toString()));
+		JsonNode queryNode = queryBuilder.build(data);
+		Response response = webTarget.request().post(Entity.json(queryNode.toString()));
 
 		if (response.getStatus() == OK.getStatusCode()) {
-			return responseBuilder.build(response, dataNode);
+			return responseBuilder.build(response, queryNode);
 		} else {
 			return response;
 		}

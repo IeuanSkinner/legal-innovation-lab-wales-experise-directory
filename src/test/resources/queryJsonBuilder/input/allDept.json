@@ -1,0 +1,6 @@
+{
+	"from": 0,
+	"size": 10,
+	"department": "all",
+	"filter_terms": "~~~+++^These^ \\/ => *are* < some:unique && || ([{ filter-terms!? }]).~~~+++"
+}

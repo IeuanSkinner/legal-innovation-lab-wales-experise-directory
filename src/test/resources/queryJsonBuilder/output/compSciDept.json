@@ -1,0 +1,45 @@
+{
+	"from": 0,
+	"size": 10,
+	"query": {
+		"bool": {
+			"must": [{
+				"match_phrase": {
+					"department": "compsci"
+				}
+			}],
+			"should": [{
+				"query_string": {
+					"query": "*These*",
+					"fields": ["name", "expertise"]
+				}
+			}, {
+				"query_string": {
+					"query": "*are*",
+					"fields": ["name", "expertise"]
+				}
+			}, {
+				"query_string": {
+					"query": "*some*",
+					"fields": ["name", "expertise"]
+				}
+			}, {
+				"query_string": {
+					"query": "*unique*",
+					"fields": ["name", "expertise"]
+				}
+			}, {
+				"query_string": {
+					"query": "*filter*",
+					"fields": ["name", "expertise"]
+				}
+			}, {
+				"query_string": {
+					"query": "*terms*",
+					"fields": ["name", "expertise"]
+				}
+			}],
+			"minimum_should_match": 1
+		}
+	}
+}

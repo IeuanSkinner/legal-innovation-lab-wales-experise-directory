@@ -1,0 +1,83 @@
+{
+	"took": 9,
+	"timed_out": false,
+	"_shards": {
+		"total": 1,
+		"successful": 1,
+		"skipped": 0,
+		"failed": 0
+	},
+	"hits": {
+		"total": {
+			"value": 5,
+			"relation": "eq"
+		},
+		"max_score": 1.0,
+		"hits": [{
+			"_index": "expertise-search",
+			"_type": "_doc",
+			"_id": "3a2fddd4-141a-4186-8cbd-365ecd29a1f6",
+			"_score": 1.0,
+			"_source": {
+				"name": "Dr Charlotte Davies",
+				"department": "biosciences",
+				"url": "https://www.swansea.ac.uk/staff/science/biosciences/daviesce",
+				"email": "c.e davies@swansea.ac.uk",
+				"tel": "01792 295293",
+				"expertise": ["Diseases of aquatic animals", "Crustaceans", "Marine Protected Areas", "Disease Connectivity", "eDNA"]
+			}
+		}, {
+			"_index": "expertise-search",
+			"_type": "_doc",
+			"_id": "b80f6f2d-df84-4bd1-a0cf-9d8bf2858096",
+			"_score": 1.0,
+			"_source": {
+				"name": "Dr Liam O'Reilly",
+				"department": "compsci",
+				"url": "https://www.swansea.ac.uk/staff/science/computer-science/l.p.oreilly/",
+				"email": "l.p.oreilly@swansea.ac.uk",
+				"tel": "01792 604033",
+				"expertise": ["Formal Methods", "Computer Science and Software Engineering Pedagogy", "Algebraic Specification", "Process Algebra"]
+			}
+		}, {
+			"_index": "expertise-search",
+			"_type": "_doc",
+			"_id": "62d07762-bde4-4d49-b888-e476c1fffeca",
+			"_score": 1.0,
+			"_source": {
+				"name": "Dr Keith Halfacree",
+				"department": "geography",
+				"url": "https://www.swansea.ac.uk/staff/science/geography/k.h.halfacree/",
+				"email": "k.h.halfacree@swansea.ac.uk",
+				"tel": "01792 602502",
+				"expertise": ["Rural areas in Global North", "Counterurbanisation and rural population change", "Defining and understanding rural and rurality", "Radical ruralities", "Countercultural spaces", "Internal migration", "Nature spaces", "Americana music"]
+			}
+		}, {
+			"_index": "expertise-search",
+			"_type": "_doc",
+			"_id": "8284bebe-c61c-4999-961c-72f4d757a05b",
+			"_score": 1.0,
+			"_source": {
+				"name": "Professor Sergei Shubin",
+				"department": "geography",
+				"url": "https://www.swansea.ac.uk/staff/science/geography/s.v.shubin/",
+				"email": "s.v.shubin@swansea.ac.uk",
+				"tel": "01792 295975",
+				"expertise": ["Inequality: poverty and social exclusion", "Critical geographies of development", "Moving geographies: mobilities and migrations", "Care relation and community", "Time and temporality", "Post-socialism and Russia", "Rural geographies", "Health \"madness\""]
+			}
+		}, {
+			"_index": "expertise-search",
+			"_type": "_doc",
+			"_id": "f6fb6e6d-cf98-4861-997e-51d349fe046f",
+			"_score": 1.0,
+			"_source": {
+				"name": "Prof. Carlos Nunez",
+				"department": "physics",
+				"url": "https://www.swansea.ac.uk/staff/science/physics/c.nunez/",
+				"email": "c.nunez@swansea.ac.uk",
+				"tel": "+44 (0)1792 602287",
+				"expertise": ["Theoretical Physics", "String Theory and Quantum Field Theory", "Some aspects of Cosmology."]
+			}
+		}]
+	}
+}
