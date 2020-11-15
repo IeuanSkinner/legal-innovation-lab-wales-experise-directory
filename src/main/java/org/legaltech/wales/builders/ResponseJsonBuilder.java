@@ -3,6 +3,7 @@ package org.legaltech.wales.builders;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.apache.commons.lang3.StringUtils;
 import org.legaltech.wales.constants.QueryTerms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,9 +16,7 @@ import java.io.IOException;
 public class ResponseJsonBuilder extends JsonBuilder {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseJsonBuilder.class);
-
 	private static final String BUILD_RESPONSE_ERROR = "Unable to build response for query [{}]!";
-	private static final String EMPTY = "";
 
 	public Response build(Response response, JsonNode dataNode) {
 		try {
@@ -46,7 +45,7 @@ public class ResponseJsonBuilder extends JsonBuilder {
 				shouldNode.forEach(queryStringNode -> {
 					String queryTerm = queryStringNode.get(QueryTerms.QUERY_STRING.lowerCaseName())
 							.get(QueryTerms.QUERY.lowerCaseName()).asText();
-					queryTerm = replaceChar(queryTerm, WILDCARD, EMPTY);
+					queryTerm = replaceChar(queryTerm, WILDCARD, StringUtils.EMPTY);
 
 					queryTerms.add(queryTerm);
 				});

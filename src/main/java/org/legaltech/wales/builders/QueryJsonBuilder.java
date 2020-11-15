@@ -3,6 +3,7 @@ package org.legaltech.wales.builders;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.apache.commons.lang3.StringUtils;
 import org.legaltech.wales.constants.QueryTerms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +18,6 @@ import java.util.regex.Pattern;
 public class QueryJsonBuilder extends JsonBuilder {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(QueryJsonBuilder.class);
-
 	private static final String DATA_READ_EXCEPTION = "Data [{}] could not be read into JSON structure.";
 	private static final Pattern PATTERN = Pattern.compile("\\w+", Pattern.CASE_INSENSITIVE);
 	private static final ArrayNode QUERY_FIELDS = OBJECT_MAPPER.createArrayNode()
@@ -50,17 +50,15 @@ public class QueryJsonBuilder extends JsonBuilder {
 
 	private JsonNode buildBoolNode(JsonNode dataNode) {
 		ObjectNode boolNode = OBJECT_MAPPER.createObjectNode();
+		String department = dataNode.get(QueryTerms.DEPARTMENT.lowerCaseName()).asText();
+		String filterTerms = dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText();
 
-		if (dataNode.hasNonNull(QueryTerms.DEPARTMENT.lowerCaseName())) {
-			String department = dataNode.get(QueryTerms.DEPARTMENT.lowerCaseName()).asText();
-
-			if (!QueryTerms.ALL.lowerCaseName().equalsIgnoreCase(department)) {
-				boolNode.set(QueryTerms.MUST.lowerCaseName(), buildMustNode(department));
-			}
+		if (StringUtils.isNotBlank(department) && !QueryTerms.ALL.lowerCaseName().equalsIgnoreCase(department)) {
+			boolNode.set(QueryTerms.MUST.lowerCaseName(), buildMustNode(department));
 		}
 
-		if (dataNode.hasNonNull(QueryTerms.FILTER_TERMS.lowerCaseName())) {
-			boolNode.set(QueryTerms.SHOULD.lowerCaseName(), buildShouldArrayNode(dataNode));
+		if (StringUtils.isNotBlank(filterTerms)) {
+			boolNode.set(QueryTerms.SHOULD.lowerCaseName(), buildShouldArrayNode(filterTerms));
 			boolNode.put(QueryTerms.MINIMUM_SHOULD_MATCH.lowerCaseName(), 1);
 		}
 
@@ -81,12 +79,11 @@ public class QueryJsonBuilder extends JsonBuilder {
 	}
 
 	// These are values that the search result *should* contain at least part of.
-	private ArrayNode buildShouldArrayNode(JsonNode dataNode) {
-		ArrayList<String> filterTerms = extractTerms(dataNode.get(QueryTerms.FILTER_TERMS.lowerCaseName()).asText());
-
+	private ArrayNode buildShouldArrayNode(String filterTerms) {
+		ArrayList<String> terms = extractTerms(filterTerms);
 		ArrayNode shouldNode = OBJECT_MAPPER.createArrayNode();
 
-		filterTerms.forEach(filterTerm -> {
+		terms.forEach(filterTerm -> {
 			ObjectNode queryStringNode = OBJECT_MAPPER.createObjectNode();
 			ObjectNode queryFieldNode = OBJECT_MAPPER.createObjectNode();
 			queryFieldNode.put(QueryTerms.QUERY.lowerCaseName(), WILDCARD + filterTerm + WILDCARD);

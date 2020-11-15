@@ -19,7 +19,7 @@ class QueryJsonBuilderTest {
 
 	@DisplayName("Verify JSON query is of expected format for the given input")
 	@ParameterizedTest
-	@ValueSource(strings = {"allDept.json", "compSciDept.json"})
+	@ValueSource(strings = {"allDept.json", "compSciDept.json", "biosciencesDeptNoFilterTerms.json"})
 	void buildQueryTest(String fileName) throws IOException {
 		String input = Files.readString(WORKING_DIR.resolve("input/" + fileName));
 		String output = Files.readString(WORKING_DIR.resolve("output/" + fileName));

@@ -1,0 +1,13 @@
+{
+	"from": 0,
+	"size": 10,
+	"query": {
+		"bool": {
+			"must": [{
+				"match_phrase": {
+					"department": "biosciences"
+				}
+			}]
+		}
+	}
+}
