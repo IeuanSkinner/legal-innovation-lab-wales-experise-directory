@@ -1,5 +1,5 @@
-.navbar>.container, .navbar>.container-fluid {
-	justify-content: flex-start;
+html {
+	width: 100%;
 }
 
 .content {
@@ -120,6 +120,10 @@ button:hover {
 
 .navbar {
 	width: 100%;
+}
+
+.navbar>.container, .navbar>.container-fluid {
+	justify-content: flex-start;
 }
 
 @media screen and (max-width: 574px) {
