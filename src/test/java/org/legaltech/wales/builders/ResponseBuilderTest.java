@@ -1,10 +1,10 @@
 package org.legaltech.wales.builders;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.legaltech.wales.schemas.FilterRequestBody;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static javax.ws.rs.core.Response.Status.OK;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.legaltech.wales.builders.JsonBuilder.OBJECT_MAPPER;
 import static org.mockito.Mockito.when;
@@ -30,15 +29,16 @@ class ResponseBuilderTest {
 			"terms that were sent")
 	@Test
 	void buildResponseTest() throws IOException {
-		String request = Files.readString(WORKING_DIR.resolve("request.json"));
+		String input = Files.readString(WORKING_DIR.resolve("input.json"));
 		String response = Files.readString(WORKING_DIR.resolve("response.json"));
 		String output = Files.readString(WORKING_DIR.resolve("output.json"));
+		FilterRequestBody filterRequestBody = OBJECT_MAPPER.readValue(input, FilterRequestBody.class);
+		JsonNode expectedOutput = OBJECT_MAPPER.readTree(output);
 
 		when(mockResponse.readEntity(String.class)).thenReturn(response);
 
-		Response serviceResponse = RESPONSE_JSON_BUILDER.build(mockResponse, OBJECT_MAPPER.readTree(request));
+		JsonNode entity = RESPONSE_JSON_BUILDER.build(filterRequestBody, mockResponse);
 
-		assertEquals(OK.getStatusCode(), serviceResponse.getStatus());
-		assertEquals(OBJECT_MAPPER.readTree(output).toString(), serviceResponse.getEntity());
+		assertEquals(expectedOutput, entity);
 	}
 }

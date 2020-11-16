@@ -8,15 +8,18 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.legaltech.wales.builders.QueryJsonBuilder;
 import org.legaltech.wales.builders.ResponseJsonBuilder;
+import org.legaltech.wales.constants.QueryTerms;
 import org.legaltech.wales.schemas.FilterRequestBody;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -50,8 +53,8 @@ public class ElasticProxy {
 	@GET
 	@Operation(summary = "Full list",
 			description = "Full list of Swansea Uni College of Science staff members areas of expertise")
-	public Response get() {
-		return webTarget.request().get();
+	public Response get(@DefaultValue("10") @QueryParam("size") int size) {
+		return webTarget.queryParam(QueryTerms.SIZE.lowerCaseName(), size).request().get();
 	}
 
 	@POST
@@ -63,7 +66,8 @@ public class ElasticProxy {
 		Response response = webTarget.request().post(Entity.json(queryNode.toString()));
 
 		if (response.getStatus() == OK.getStatusCode()) {
-			return responseBuilder.build(response, queryNode);
+			JsonNode entity = responseBuilder.build(filterRequestBody, response);
+			return entity != null ? Response.ok().entity(entity.toString()).build() : Response.serverError().build();
 		} else {
 			return response;
 		}
