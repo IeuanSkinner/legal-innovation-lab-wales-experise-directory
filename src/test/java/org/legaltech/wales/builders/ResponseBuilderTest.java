@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.legaltech.wales.builders.JsonBuilder.OBJECT_MAPPER;
+import static org.legaltech.wales.ElasticProxy.OBJECT_MAPPER;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)

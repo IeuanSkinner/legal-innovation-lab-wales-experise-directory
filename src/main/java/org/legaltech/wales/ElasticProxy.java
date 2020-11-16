@@ -1,6 +1,7 @@
 package org.legaltech.wales;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
@@ -34,6 +35,8 @@ import static javax.ws.rs.core.Response.Status.OK;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class ElasticProxy {
+
+	public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
 	private final WebTarget webTarget;
 	private final QueryJsonBuilder queryBuilder;

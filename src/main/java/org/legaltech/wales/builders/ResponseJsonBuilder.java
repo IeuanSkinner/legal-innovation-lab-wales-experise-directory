@@ -12,8 +12,10 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
+import static org.legaltech.wales.ElasticProxy.OBJECT_MAPPER;
+
 @ApplicationScoped
-public class ResponseJsonBuilder extends JsonBuilder {
+public class ResponseJsonBuilder {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseJsonBuilder.class);
 	private static final String BUILD_RESPONSE_ERROR = "Unable to build response for query [{}]!";

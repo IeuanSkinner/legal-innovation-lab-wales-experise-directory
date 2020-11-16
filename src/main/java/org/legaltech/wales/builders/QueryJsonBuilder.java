@@ -10,8 +10,10 @@ import org.legaltech.wales.constants.QueryTerms;
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 
+import static org.legaltech.wales.ElasticProxy.OBJECT_MAPPER;
+
 @ApplicationScoped
-public class QueryJsonBuilder extends JsonBuilder {
+public class QueryJsonBuilder {
 
 	private static final String WILDCARD = "*";
 
