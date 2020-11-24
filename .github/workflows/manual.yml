@@ -1,10 +1,11 @@
 name: Fetch & Index Staff Data
 
 on:
-  push:
-    branches: [ master ]
-  schedule:
-    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: Git Ref (Optional)
+        required: false
 
 jobs:
   build:
